@@ -54,6 +54,17 @@ app.use(async (req, res, next) => {
 // Mount routes
 app.use('/api', apiRouter);
 
+// Temporary debug route to list databases
+app.get('/api/debug-dbs', async (req, res) => {
+  try {
+    const admin = mongoose.connection.db.admin();
+    const dbs = await admin.listDatabases();
+    res.json(dbs);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
 // Mount non-prefixed root routes
 app.post('/reset-password-direct', resetPasswordDirect);
 
