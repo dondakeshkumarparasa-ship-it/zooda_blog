@@ -16,15 +16,23 @@ app.use(express.urlencoded({ extended: true }));
 
 // Setup static uploads directory
 const uploadDir = path.join(__dirname, '../uploads');
-if (!fs.existsSync(uploadDir)) {
-  fs.mkdirSync(uploadDir, { recursive: true });
+try {
+  if (!fs.existsSync(uploadDir)) {
+    fs.mkdirSync(uploadDir, { recursive: true });
+  }
+} catch (err) {
+  console.warn("Could not create local uploads directory (read-only filesystem):", err.message);
 }
 app.use('/uploads', express.static(uploadDir));
 
 // Setup static public/sdk directory
 const sdkDir = path.join(__dirname, '../public/sdk');
-if (!fs.existsSync(sdkDir)) {
-  fs.mkdirSync(sdkDir, { recursive: true });
+try {
+  if (!fs.existsSync(sdkDir)) {
+    fs.mkdirSync(sdkDir, { recursive: true });
+  }
+} catch (err) {
+  console.warn("Could not create public/sdk directory (read-only filesystem):", err.message);
 }
 app.use('/sdk', express.static(sdkDir));
 
