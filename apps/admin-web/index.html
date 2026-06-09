@@ -1,0 +1,977 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- App Title -->
+    <title>Admin Dashboard - Zooda</title>
+
+    <!-- Meta -->
+    <meta name="description" content="Zooda Admin Dashboard Portal" />
+    <meta name="author" content="Zooda" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="./icon.png" type="image/x-icon" />
+
+    <!-- FONTS & ICON SHEETS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    
+    <!-- TAILWIND CSS VIA CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- REACT, REACT-DOM, AXIOS & BABEL STANDALONE FROM CDN -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- LUCIDE ICONS COMPATIBILITY LIBRARY -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    <!-- CLASSIC CKEDITOR 4 FOR RICH TEXT EDITING -->
+    <script>
+      window.CKEDITOR_BASEPATH = 'https://cdn.ckeditor.com/4.22.1/standard/';
+    </script>
+    <script src="https://cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script>
+    <script>
+      if (window.CKEDITOR) {
+        window.CKEDITOR.config.versionCheck = false;
+      }
+    </script>
+
+    <style>
+      .cke_notifications_area {
+        display: none !important;
+      }
+      /* Full page loader styles */
+      #loader-wrapper {
+        position: fixed;
+        inset: 0;
+        background: #0f172a;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 99999;
+        font-family: 'Poppins', sans-serif;
+        color: #ffffff;
+      }
+      .loader-pulse {
+        width: 80px;
+        height: 80px;
+        border-radius: 20px;
+        background: #3b82f6;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 0 40px rgba(59, 130, 246, 0.4);
+        animation: pulseScale 2s infinite ease-in-out;
+        margin-bottom: 24px;
+      }
+      @keyframes pulseScale {
+        0%, 100% { transform: scale(1); box-shadow: 0 0 40px rgba(59, 130, 246, 0.4); }
+        50% { transform: scale(1.1); box-shadow: 0 0 60px rgba(59, 130, 246, 0.6); }
+      }
+      .loader-spin {
+        width: 24px;
+        height: 24px;
+        border: 3px solid rgba(255, 255, 255, 0.2);
+        border-top-color: #ffffff;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+      /* Custom error console container */
+      #error-wrapper {
+        display: none;
+        flex-direction: column !important;
+        gap: 16px !important;
+        position: fixed;
+        inset: 0;
+        background: #090d16;
+        color: #ef4444;
+        padding: 24px;
+        font-family: monospace;
+        z-index: 999999;
+        overflow-y: auto;
+      }
+    </style>
+
+    <!-- STANDARD CSS FOR EXTERNAL FONTS -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+    </style>
+
+    <!-- STANDARD CUSTOM STYLESHEET -->
+    <style>
+      :root {
+        --background: 220 20% 97%;
+        --foreground: 220 20% 10%;
+
+        --card: 0 0% 100%;
+        --card-foreground: 220 20% 10%;
+
+        --popover: 0 0% 100%;
+        --popover-foreground: 220 20% 10%;
+
+        --primary: 217 91% 60%;
+        --primary-foreground: 0 0% 100%;
+
+        --secondary: 220 14% 92%;
+        --secondary-foreground: 220 20% 20%;
+
+        --muted: 220 14% 95%;
+        --muted-foreground: 220 10% 46%;
+
+        --accent: 217 91% 95%;
+        --accent-foreground: 217 91% 40%;
+
+        --destructive: 0 72% 51%;
+        --destructive-foreground: 0 0% 100%;
+
+        --warning: 38 92% 50%;
+        --warning-foreground: 0 0% 100%;
+
+        --success: 142 76% 36%;
+        --success-foreground: 0 0% 100%;
+
+        --info: 199 89% 48%;
+        --info-foreground: 0 0% 100%;
+
+        --border: 220 13% 91%;
+        --input: 220 13% 91%;
+        --ring: 217 91% 60%;
+
+        --radius: 0.75rem;
+
+        --sidebar-background: 222 47% 11%;
+        --sidebar-foreground: 220 14% 70%;
+        --sidebar-primary: 217 91% 60%;
+        --sidebar-primary-foreground: 0 0% 100%;
+        --sidebar-accent: 222 47% 16%;
+        --sidebar-accent-foreground: 220 14% 95%;
+        --sidebar-border: 222 47% 18%;
+        --sidebar-ring: 217 91% 60%;
+
+        /* Custom tokens */
+        --theme-primary: hsl(217 91% 60%);
+        --theme-sidebar: hsl(222 47% 11%);
+        --theme-card: hsl(0 0% 100%);
+        --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+        --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        --shadow-glow: 0 0 20px hsl(217 91% 60% / 0.3);
+        --shadow-card: 0 1px 3px 0 rgb(0 0 0 / 0.05), 0 1px 2px -1px rgb(0 0 0 / 0.05);
+      }
+
+      .dark {
+        --background: 222 47% 8%;
+        --foreground: 220 14% 95%;
+
+        --card: 222 47% 11%;
+        --card-foreground: 220 14% 95%;
+
+        --popover: 222 47% 11%;
+        --popover-foreground: 220 14% 95%;
+
+        --primary: 217 91% 60%;
+        --primary-foreground: 0 0% 100%;
+
+        --secondary: 222 47% 16%;
+        --secondary-foreground: 220 14% 95%;
+
+        --muted: 222 47% 14%;
+        --muted-foreground: 220 14% 60%;
+
+        --accent: 222 47% 18%;
+        --accent-foreground: 220 14% 95%;
+
+        --destructive: 0 62% 50%;
+        --destructive-foreground: 0 0% 100%;
+
+        --border: 222 47% 18%;
+        --input: 222 47% 18%;
+        --ring: 217 91% 60%;
+
+        --sidebar-background: 222 47% 6%;
+        --sidebar-foreground: 220 14% 70%;
+        --sidebar-primary: 217 91% 60%;
+        --sidebar-primary-foreground: 0 0% 100%;
+        --sidebar-accent: 222 47% 11%;
+        --sidebar-accent-foreground: 220 14% 95%;
+        --sidebar-border: 222 47% 14%;
+        --sidebar-ring: 217 91% 60%;
+      }
+
+      * {
+        border-color: hsl(var(--border) / 0.5);
+      }
+
+      body {
+        background-color: hsl(var(--background));
+        color: hsl(var(--foreground));
+        font-family: 'Poppins', sans-serif !important;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      .scrollbar-thin {
+        scrollbar-width: thin;
+        scrollbar-color: hsl(var(--muted-foreground) / 0.2) transparent;
+      }
+      
+      .scrollbar-thin::-webkit-scrollbar {
+        width: 6px;
+      }
+      
+      .scrollbar-thin::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      
+      .scrollbar-thin::-webkit-scrollbar-thumb {
+        background: hsl(var(--muted-foreground) / 0.2);
+        border-radius: 3px;
+      }
+      
+      .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+        background: hsl(var(--muted-foreground) / 0.3);
+        border-radius: 3px;
+      }
+
+      /* Microsoft Fluent Weather Glassmorphism Orbs & Styles */
+      .orb {
+        position: fixed;
+        border-radius: 50%;
+        filter: blur(140px);
+        pointer-events: none;
+        z-index: 0;
+      }
+      .orb-1 {
+        top: -10%;
+        right: -10%;
+        width: 500px;
+        height: 500px;
+        background: rgba(16, 185, 129, 0.14);
+      }
+      .orb-2 {
+        bottom: -10%;
+        left: -10%;
+        width: 500px;
+        height: 500px;
+        background: rgba(59, 130, 246, 0.18);
+      }
+      .orb-3 {
+        top: 40%;
+        left: 30%;
+        width: 400px;
+        height: 400px;
+        background: rgba(168, 85, 247, 0.08);
+      }
+    </style>
+  </head>
+
+  <body class="bg-slate-900 text-slate-100 min-h-screen">
+    <!-- Ambient backdrop light flares -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    
+    <!-- Premium Loader Display -->
+    <div id="loader-wrapper">
+      <div class="loader-pulse">
+        <div class="loader-spin"></div>
+      </div>
+      <h2 class="text-xl font-bold tracking-wider text-blue-400">ZOODA ADMIN PORTAL</h2>
+      <p id="loader-status" class="text-xs text-slate-400 mt-3 font-mono">Initializing live TSX modules...</p>
+      <div class="w-64 bg-slate-800 h-1.5 rounded-full mt-4 overflow-hidden border border-slate-700/50">
+        <div id="loader-progress" class="bg-blue-500 h-full rounded-full transition-all duration-300" style="width: 5%"></div>
+      </div>
+    </div>
+
+    <!-- Live Compiler Error Screen -->
+    <div id="error-wrapper">
+      <div class="flex items-center gap-3 border-b border-red-950 pb-4">
+        <span class="bg-red-500/20 text-red-500 px-3 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider">Compiler Error</span>
+        <h1 class="text-lg font-bold text-slate-200" id="error-title">Babel compilation failed</h1>
+      </div>
+      <div class="bg-red-950/20 border border-red-900/50 rounded-xl p-5 overflow-x-auto text-sm text-red-400 leading-relaxed font-mono whitespace-pre" id="error-content">
+      </div>
+      <p class="text-xs text-slate-500 mt-4">Please check your code's syntax, verify all imports, and refresh to recompile.</p>
+    </div>
+
+    <!-- Application Root Target -->
+    <div id="root"></div>
+
+    <!-- TWEAK TAILWIND PLAYCDN SETTINGS TO MATCH ZOODA DESIGN TOKENS -->
+    <script>
+      tailwind.config = {
+        darkMode: ["class"],
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Poppins"', 'sans-serif'],
+            },
+            colors: {
+              border: "hsl(var(--border, 220 13% 91%))",
+              input: "hsl(var(--input, 220 13% 91%))",
+              ring: "hsl(var(--ring, 217 91% 60%))",
+              background: "hsl(var(--background, 220 20% 97%))",
+              foreground: "hsl(var(--foreground, 220 20% 10%))",
+              primary: {
+                DEFAULT: "hsl(var(--primary, 217 91% 60%))",
+                foreground: "hsl(var(--primary-foreground, 0 0% 100%))",
+              },
+              secondary: {
+                DEFAULT: "hsl(var(--secondary, 220 14% 92%))",
+                foreground: "hsl(var(--secondary-foreground, 220 20% 20%))",
+              },
+              destructive: {
+                DEFAULT: "hsl(var(--destructive, 0 72% 51%))",
+                foreground: "hsl(var(--destructive-foreground, 0 0% 100%))",
+              },
+              warning: {
+                DEFAULT: "hsl(var(--warning, 38 92% 50%))",
+                foreground: "hsl(var(--warning-foreground, 0 0% 100%))",
+              },
+              success: {
+                DEFAULT: "hsl(var(--success, 142 76% 36%))",
+                foreground: "hsl(var(--success-foreground, 0 0% 100%))",
+              },
+              info: {
+                DEFAULT: "hsl(var(--info, 199 89% 48%))",
+                foreground: "hsl(var(--info-foreground, 0 0% 100%))",
+              },
+              muted: {
+                DEFAULT: "hsl(var(--muted, 220 14% 95%))",
+                foreground: "hsl(var(--muted-foreground, 220 10% 46%))",
+              },
+              accent: {
+                DEFAULT: "hsl(var(--accent, 217 91% 95%))",
+                foreground: "hsl(var(--accent-foreground, 217 91% 40%))",
+              },
+              popover: {
+                DEFAULT: "hsl(var(--popover, 0 0% 100%))",
+                foreground: "hsl(var(--popover-foreground, 220 20% 10%))",
+              },
+              card: {
+                DEFAULT: "hsl(var(--card, 0 0% 100%))",
+                foreground: "hsl(var(--card-foreground, 220 20% 10%))",
+              },
+              sidebar: {
+                DEFAULT: "hsl(var(--sidebar-background, 222 47% 11%))",
+                foreground: "hsl(var(--sidebar-foreground, 220 14% 70%))",
+                primary: "hsl(var(--sidebar-primary, 217 91% 60%))",
+                "primary-foreground": "hsl(var(--sidebar-primary-foreground, 0 0% 100%))",
+                accent: "hsl(var(--sidebar-accent, 222 47% 16%))",
+                "accent-foreground": "hsl(var(--sidebar-accent-foreground, 220 14% 95%))",
+                border: "hsl(var(--sidebar-border, 222 47% 18%))",
+                ring: "hsl(var(--sidebar-ring, 217 91% 60%))",
+              },
+            },
+            borderRadius: {
+              lg: "var(--radius, 0.75rem)",
+              md: "calc(var(--radius, 0.75rem) - 2px)",
+              sm: "calc(var(--radius, 0.75rem) - 4px)",
+            },
+            boxShadow: {
+              'glow': 'var(--shadow-glow, 0 0 20px rgba(59, 130, 246, 0.3))',
+              'card': 'var(--shadow-card, 0 1px 3px 0 rgba(0, 0, 0, 0.05))',
+            }
+          }
+        }
+      };
+    </script>
+
+    <!-- IN-BROWSER DYNAMIC ESM & COMMONJS compiler framework -->
+    <script>
+      // 1. Global unhandled runtime exception interceptor to prevent infinite loader hangs!
+      window.addEventListener("error", (event) => {
+        if (event.message === "Script error." || (event.message && event.message.includes("Script error")) || !event.filename || event.filename === "" || (event.lineno === 0 && event.colno === 0)) {
+          console.warn("Muted cross-origin script error:", event);
+          return;
+        }
+        showCompilationError("Runtime Exception", event.message + "\n\nat " + event.filename + ":" + event.lineno + ":" + event.colno);
+      });
+
+      // 2. Map React globally for plugins
+      window.React = React;
+      window.ReactDOM = ReactDOM;
+      window.axios = axios;
+
+      // Global Axios Request Interceptor to dynamically redirect requests to the local backend during development
+      axios.interceptors.request.use((config) => {
+        if (config.url && config.url.includes("https://api.zooda.in")) {
+          const localBase = (localStorage.getItem("use_local_backend") === "true")
+            ? "http://localhost:5000"
+            : "https://api.zooda.in";
+          config.url = config.url.replace("https://api.zooda.in", localBase);
+        }
+        return config;
+      });
+
+      // 3. Lucide UMD SVGIcon Engine Builder
+      const SvgIcon = ({ d, size = 24, className = "", children }) => (
+        React.createElement("svg", {
+          xmlns: "http://www.w3.org/2000/svg",
+          width: size,
+          height: size,
+          viewBox: "0 0 24 24",
+          fill: "none",
+          stroke: "currentColor",
+          strokeWidth: "2",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+          className: className
+        }, children || React.createElement("path", { d }))
+      );
+
+      // Keep a cache of constructed icon components so they are only created ONCE per icon type!
+      const iconComponentCache = {};
+
+      // DynProxy to map any Lucide component imported in TSX files directly to Lucide's global UMD library
+      const lucideReactStubs = new Proxy({}, {
+        get(target, prop) {
+          if (prop === "default" || prop === "__esModule") return undefined;
+          
+          if (iconComponentCache[prop]) {
+            return iconComponentCache[prop];
+          }
+
+          const component = (props) => {
+            const camelName = prop.charAt(0).toLowerCase() + prop.slice(1);
+            const kebabName = prop.replace(/([a-z0-9])([A-Z])/g, '$1-$2').toLowerCase();
+            
+            const icon = window.lucide && (
+              window.lucide.icons[camelName] || 
+              window.lucide.icons[kebabName] || 
+              window.lucide.icons[prop.toLowerCase()] ||
+              window.lucide.icons[prop]
+            );
+
+            if (!icon) {
+              console.warn(`Icon ${prop} (${kebabName}) not found in Lucide UMD registry! Rendering fallback.`);
+              return React.createElement(SvgIcon, { d: "M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z", ...props });
+            }
+
+            let children = [];
+            let attrs = {};
+
+            if (Array.isArray(icon)) {
+              if (typeof icon[0] === 'string' && icon[0] === 'svg') {
+                attrs = icon[1] || {};
+                children = icon[2] || [];
+              } else {
+                attrs = {};
+                children = icon;
+              }
+            } else if (icon && typeof icon === 'object') {
+              attrs = {};
+              children = icon.node || [];
+            }
+            
+            const combinedAttrs = {
+              viewBox: "0 0 24 24",
+              fill: "none",
+              stroke: "currentColor",
+              strokeWidth: "2",
+              strokeLinecap: "round",
+              strokeLinejoin: "round",
+              ...attrs,
+              ...props,
+              className: `${attrs.class || ''} ${props.className || ''}`.trim()
+            };
+
+            if (props.size) {
+              combinedAttrs.width = props.size;
+              combinedAttrs.height = props.size;
+            }
+
+            const reactAttrs = {};
+            for (const [key, val] of Object.entries(combinedAttrs)) {
+              if (key === 'class') continue;
+              const camelKey = key.replace(/-([a-z0-9])/g, (g) => g[1].toUpperCase());
+              reactAttrs[camelKey] = val;
+            }
+            delete reactAttrs.size; // Avoid passing down invalid React custom size attributes to the SVG element
+
+            const renderNode = (node, index) => {
+              if (!node || !Array.isArray(node)) return null;
+              const [nodeTag, nodeAttrs = {}] = node;
+              const cleanNodeAttrs = { key: index };
+              if (nodeAttrs) {
+                for (const [key, val] of Object.entries(nodeAttrs)) {
+                  const camelKey = key.replace(/-([a-z0-9])/g, (g) => g[1].toUpperCase());
+                  cleanNodeAttrs[camelKey] = val;
+                }
+              }
+              return React.createElement(nodeTag, cleanNodeAttrs);
+            };
+
+            return React.createElement(
+              "svg",
+              reactAttrs,
+              ...children.map((child, idx) => renderNode(child, idx)).filter(Boolean)
+            );
+          };
+
+          iconComponentCache[prop] = component;
+          return component;
+        }
+      });
+
+      // 4. Simple self-contained router context for ReactRouterDOM to completely remove CDN dependencies and speed up execution
+      const ReactRouterDOMStub = {
+        BrowserRouter: ({ children }) => {
+          const [path, setPath] = React.useState(window.location.hash.slice(1) || "/");
+          React.useEffect(() => {
+            const handleHashChange = () => setPath(window.location.hash.slice(1) || "/");
+            window.addEventListener("hashchange", handleHashChange);
+            return () => window.removeEventListener("hashchange", handleHashChange);
+          }, []);
+          return React.createElement(ReactRouterDOMStub.RouterContext.Provider, { value: { path, setPath } }, children);
+        },
+        RouterContext: React.createContext({ path: "/", setPath: () => {} }),
+        Routes: ({ children }) => {
+          const { path } = React.useContext(ReactRouterDOMStub.RouterContext);
+          const routes = React.Children.toArray(children);
+          const match = routes.find(r => r.props.path === path) || routes.find(r => r.props.path === "*");
+          return match ? match.props.element : null;
+        },
+        Route: ({ path, element }) => element,
+        Link: ({ to, children, className, ...props }) => {
+          const { setPath } = React.useContext(ReactRouterDOMStub.RouterContext);
+          return React.createElement("a", { 
+             href: "#" + to,
+             className,
+             onClick: (e) => {
+              e.preventDefault();
+              window.location.hash = to;
+              setPath(to);
+            },
+            ...props 
+           }, children);
+        },
+        useNavigate: () => {
+          const { setPath } = React.useContext(ReactRouterDOMStub.RouterContext);
+          return (to) => {
+            window.location.hash = to;
+            setPath(to);
+          };
+        },
+        useLocation: () => {
+          const { path } = React.useContext(ReactRouterDOMStub.RouterContext);
+          return { pathname: path };
+        }
+      };
+
+      // 5. Framer Motion Shim Proxy that is BOTH a React component dictionary AND a callable wrapping function
+      const motionBase = function(Component) {
+        return React.forwardRef(({ animate, initial, exit, transition, ...props }, ref) => {
+          return React.createElement(Component, { ...props, ref });
+        });
+      };
+
+      const motionComponents = new Proxy(motionBase, {
+        get(target, prop) {
+          if (prop === "default" || prop === "__esModule") return undefined;
+          return React.forwardRef(({ animate, initial, exit, transition, ...props }, ref) => {
+            return React.createElement(prop, { ...props, ref });
+          });
+        }
+      });
+
+      const framerMotionStub = {
+        motion: motionComponents,
+        AnimatePresence: ({ children }) => children,
+        useAnimation: () => ({ start: () => Promise.resolve(), stop: () => {} })
+      };
+
+      // 6. Recharts Mock stubs to avoid loading heavy SVG layout modules
+      const RechartsStub = {
+        ResponsiveContainer: ({ children }) => React.createElement("div", { style: { width: "100%", height: "100%", minHeight: "240px" } }, children),
+        AreaChart: ({ children }) => React.createElement("div", { style: { width: "100%", height: "100%", minHeight: "240px" }, className: "flex flex-col justify-end" }, children),
+        LineChart: ({ children }) => React.createElement("div", { style: { width: "100%", height: "100%", minHeight: "240px" }, className: "flex flex-col justify-end" }, children),
+        BarChart: ({ children }) => React.createElement("div", { style: { width: "100%", height: "100%", minHeight: "240px" }, className: "flex flex-col justify-end" }, children),
+        Area: () => null,
+        Line: () => null,
+        Bar: () => null,
+        XAxis: () => null,
+        YAxis: () => null,
+        CartesianGrid: () => null,
+        Tooltip: () => null,
+        Legend: () => null
+      };
+
+      // 7. Clsx and Tailwind-Merge standard helpers
+      const clsxStub = (...inputs) => inputs.filter(Boolean).join(" ");
+      const tailwindMergeStub = {
+        twMerge: (...inputs) => inputs.filter(Boolean).join(" ")
+      };
+
+      // 8. Class-Variance-Authority (CVA) in-browser interpreter
+      const cvaStub = (base, options) => {
+        return (props) => {
+          let classes = base || "";
+          if (options && options.variants && props) {
+            for (const [key, val] of Object.entries(props)) {
+              if (options.variants[key] && options.variants[key][val]) {
+                classes += " " + options.variants[key][val];
+              }
+            }
+          }
+          return classes;
+        };
+      };
+
+      // 9. React-Slot stub for Shadcn UI tag swapping
+      const SlotStub = React.forwardRef(({ children, ...props }, ref) => {
+        if (!children) return null;
+        const child = React.Children.only(children);
+        return React.cloneElement(child, {
+          ...props,
+          ref
+        });
+      });
+
+      // 10. Ultimate Bulletproof Mock Module Generator to prevent node_modules load crashes
+      const makeMockModule = (name) => {
+        const mockFn = () => React.createElement("div", null);
+        const mockProxy = new Proxy(mockFn, {
+          get(target, prop) {
+            if (prop === "__esModule") return true;
+            if (prop === "default") return mockProxy;
+            if (prop === "displayName") return name;
+            return mockProxy;
+          }
+        });
+        return mockProxy;
+      };
+
+      // 11. CommonJS require shim registry
+      const compiledModules = {};
+      const moduleCache = {};
+
+      const externals = {
+        "react": window.React,
+        "react/jsx-runtime": {
+          jsx: React.createElement,
+          jsxs: React.createElement
+        },
+        "react-dom": {
+          createRoot: (el) => ({
+            render: (element) => {
+              const root = ReactDOM.createRoot(el);
+              root.render(element);
+            }
+          })
+        },
+        "react-dom/client": {
+          createRoot: (el) => ({
+            render: (element) => {
+              const root = ReactDOM.createRoot(el);
+              root.render(element);
+            }
+          })
+        },
+        "react-router-dom": ReactRouterDOMStub,
+        "lucide-react": lucideReactStubs,
+        "axios": window.axios,
+        "framer-motion": framerMotionStub,
+        "recharts": RechartsStub,
+        "clsx": clsxStub,
+        "tailwind-merge": tailwindMergeStub,
+        "class-variance-authority": { cva: cvaStub },
+        "@radix-ui/react-slot": { Slot: SlotStub },
+        "@tanstack/react-query": {
+          QueryClient: class {
+            clear() {}
+          },
+          QueryClientProvider: ({ children }) => children
+        },
+        "@/components/ui/toaster": { Toaster: () => null },
+        "@/components/ui/sonner": { Toaster: () => null },
+        "@/components/ui/tooltip": { TooltipProvider: ({ children }) => children }
+      };
+
+      function makeRequire(currentFileDir) {
+        return function require(moduleName) {
+          if (externals[moduleName]) {
+            return externals[moduleName];
+          }
+
+          const unresolved = resolvePath(moduleName, currentFileDir);
+          
+          // Synchronous registry resolution check with dynamic extension matching
+          let resolved = unresolved;
+          if (!compiledModules[resolved]) {
+            for (const ext of [".tsx", ".ts", ".js", "/index.tsx", "/index.ts"]) {
+              if (compiledModules[unresolved + ext]) {
+                resolved = unresolved + ext;
+                break;
+              }
+            }
+          }
+
+          if (moduleCache[resolved]) {
+            return moduleCache[resolved].exports;
+          }
+
+          const moduleFn = compiledModules[resolved];
+          if (!moduleFn) {
+            console.warn(`Module "${moduleName}" (resolved as "${resolved}") could not be loaded. Falling back to mock proxy.`);
+            return makeMockModule(moduleName);
+          }
+
+          const moduleObj = { exports: {} };
+          moduleCache[resolved] = moduleObj;
+
+          const fileDir = resolved.split("/").slice(0, -1).join("/");
+          const localRequire = makeRequire(fileDir);
+
+          try {
+            moduleFn(localRequire, moduleObj.exports, moduleObj, resolved, fileDir);
+          } catch (err) {
+            console.error(`Runtime execution error in module ${resolved}:`, err);
+            throw err;
+          }
+
+          return moduleObj.exports;
+        };
+      }
+
+      function resolvePath(importPath, currentFileDir) {
+        if (importPath.startsWith("@/")) {
+          return "./src/" + importPath.slice(2);
+        }
+        if (importPath.startsWith("./") || importPath.startsWith("../")) {
+          const parts = currentFileDir.split("/");
+          if (parts[parts.length - 1] === "") parts.pop();
+          const importParts = importPath.split("/");
+          for (const part of importParts) {
+            if (part === ".") continue;
+            if (part === "..") {
+              parts.pop();
+            } else {
+              parts.push(part);
+            }
+          }
+          return parts.join("/");
+        }
+        return importPath;
+      }
+
+      function getImports(code) {
+        const imports = [];
+        const regex = /import\s+[\s\S]*?\s+from\s+['"](.*?)['"]/g;
+        let match;
+        while ((match = regex.exec(code)) !== null) {
+          imports.push(match[1]);
+        }
+        const sideEffectRegex = /import\s+['"](.*?)['"]/g;
+        while ((match = sideEffectRegex.exec(code)) !== null) {
+          if (!match[0].includes("from")) {
+            imports.push(match[1]);
+          }
+        }
+        return Array.from(new Set(imports));
+      }
+    </script>
+
+    <!-- MODULE RECURSIVE LOADER AND COMPILER STAGE -->
+    <script>
+      const statusText = document.getElementById("loader-status");
+      const progressTracker = document.getElementById("loader-progress");
+      const pendingModules = new Set();
+      
+      const filesList = [];
+      let loadedCount = 0;
+
+      function updateProgress(message, percentage) {
+        statusText.innerText = message;
+        if (percentage) {
+          progressTracker.style.width = percentage + "%";
+        }
+      }
+
+      async function fetchFile(filePath) {
+        // Probe cascade synchronously during fetch block with cache-busting timestamp to bypass HTTP cache
+        const cacheBuster = "?t=" + Date.now();
+        let res = await fetch(filePath + cacheBuster);
+        if (res.ok) {
+          return { text: await res.text(), resolvedPath: filePath };
+        }
+        
+        for (const ext of [".tsx", ".ts", ".js", "/index.tsx", "/index.ts"]) {
+          res = await fetch(filePath + ext + cacheBuster);
+          if (res.ok) {
+            return { text: await res.text(), resolvedPath: filePath + ext };
+          }
+        }
+
+        throw new Error(`Failed to load ${filePath} (tried .tsx, .ts, .js, and /index.tsx)`);
+      }
+
+      async function compileModuleRecursive(filePath, currentDir = ".") {
+        const unresolvedPath = resolvePath(filePath, currentDir);
+
+        if (compiledModules[unresolvedPath] || pendingModules.has(unresolvedPath)) {
+          return unresolvedPath;
+        }
+
+        // Stylesheet injection bypass
+        if (unresolvedPath.endsWith(".css")) {
+          try {
+            const res = await fetch(unresolvedPath);
+            const cssText = await res.text();
+            
+            const styleTag = document.createElement("style");
+            styleTag.innerHTML = cssText;
+            document.head.appendChild(styleTag);
+          } catch (e) {
+            console.warn(`Failed to inject css stylesheet ${unresolvedPath}`, e);
+          }
+          
+          compiledModules[unresolvedPath] = (require, exports, module) => {
+            module.exports = {};
+          };
+          return unresolvedPath;
+        }
+
+        // Image framing bypass
+        if (unresolvedPath.endsWith(".png") || unresolvedPath.endsWith(".jpg") || unresolvedPath.endsWith(".jpeg") || unresolvedPath.endsWith(".svg")) {
+          compiledModules[unresolvedPath] = (require, exports, module) => {
+            module.exports = unresolvedPath;
+          };
+          return unresolvedPath;
+        }
+
+        pendingModules.add(unresolvedPath);
+        updateProgress(`Loading ${unresolvedPath.split("/").pop()}...`, Math.min(80, 5 + loadedCount * 5));
+
+        // Fetch TSX/TS file with dynamic extension resolution
+        let source, finalPath;
+        try {
+          const fetchResult = await fetchFile(unresolvedPath);
+          source = fetchResult.text;
+          finalPath = fetchResult.resolvedPath;
+        } catch (err) {
+          showCompilationError(unresolvedPath, err.message);
+          throw err;
+        }
+
+        const fileDir = finalPath.split("/").slice(0, -1).join("/");
+
+        const fileImports = getImports(source);
+        for (const imp of fileImports) {
+          if (externals[imp]) continue;
+          await compileModuleRecursive(imp, fileDir);
+        }
+
+        // Check LocalStorage cache with v20 prefix to invalidate old/broken entries
+        let compiledCode = "";
+        const cacheKey = "zooda_compiled_v20_" + finalPath;
+        const cached = JSON.parse(localStorage.getItem(cacheKey) || "null");
+
+        if (cached && cached.source === source) {
+          compiledCode = cached.compiled;
+        } else {
+          updateProgress("Compiling " + finalPath.split("/").pop() + "...");
+          try {
+            // Support Vite env variables and import.meta directly in the browser
+            let cleanedSource = source.replace(/import\.meta\.env\.VITE_API_URL/g, '(localStorage.getItem("use_local_backend") === "true") ? "http://localhost:5000/api" : "https://api.zooda.in/api"');
+            cleanedSource = cleanedSource.replace(/import\.meta\.env/g, '{}');
+            cleanedSource = cleanedSource.replace(/import\.meta/g, '{}');
+
+            if (finalPath.includes("AdminSidebar")) {
+              cleanedSource = cleanedSource.replace(/import\s+logo\s+from\s+['"].*icon\.png['"];?/g, 'const logo = "./icon.png";');
+            }
+
+            const transformed = Babel.transform(cleanedSource, {
+              filename: finalPath,
+              presets: ['react', 'typescript'],
+              plugins: ['transform-modules-commonjs']
+            });
+            compiledCode = transformed.code;
+
+            try {
+              localStorage.setItem(cacheKey, JSON.stringify({
+                source,
+                compiled: compiledCode
+              }));
+            } catch (storageErr) {
+              console.warn("localStorage quota exceeded, clearing old Zooda compile caches...", storageErr);
+              try {
+                for (let i = localStorage.length - 1; i >= 0; i--) {
+                  const key = localStorage.key(i);
+                  if (key && key.startsWith("zooda_compiled_") && !key.startsWith("zooda_compiled_v20_")) {
+                    localStorage.removeItem(key);
+                  }
+                }
+                localStorage.setItem(cacheKey, JSON.stringify({
+                  source,
+                  compiled: compiledCode
+                }));
+              } catch (retryErr) {
+                console.warn("Failed to cache compiled output of " + finalPath + " (quota fully exceeded). Continuing execution...", retryErr);
+              }
+            }
+          } catch (err) {
+            showCompilationError(finalPath, err.message);
+            throw err;
+          }
+        }
+
+        // Register compiled function under BOTH unresolvedPath AND finalPath!
+        const moduleFn = new Function("require", "exports", "module", "__filename", "__dirname", compiledCode);
+        compiledModules[finalPath] = moduleFn;
+        compiledModules[unresolvedPath] = moduleFn;
+
+        pendingModules.delete(unresolvedPath);
+        loadedCount++;
+        return finalPath;
+      }
+
+      function showCompilationError(file, message) {
+        document.getElementById("loader-wrapper").style.setProperty("display", "none", "important");
+        const errorContainer = document.getElementById("error-wrapper");
+        document.getElementById("error-title").innerText = `Compilation Error in ${(file || "System").split("/").pop()}`;
+        document.getElementById("error-content").innerText = `${file || "System"}:\n\n${message}`;
+        errorContainer.style.setProperty("display", "flex", "important");
+      }
+
+      // Entry assembly point
+      async function launchAdminPortal() {
+        try {
+          updateProgress("Building dependency graph...", 20);
+          await compileModuleRecursive("./src/main.tsx");
+
+          updateProgress("Launching admin portal...", 95);
+          
+          setTimeout(() => {
+            try {
+              const rootRequire = makeRequire(".");
+              rootRequire("./src/main.tsx");
+              document.getElementById("loader-wrapper").style.display = "none";
+            } catch (err) {
+              console.error("Critical failure executing main.tsx:", err);
+              showCompilationError("Root Launcher", err.message + "\n\n" + (err.stack || ""));
+            }
+          }, 150);
+
+        } catch (err) {
+          console.error("Critical failure launching portal:", err);
+          if (document.getElementById("error-wrapper").style.display !== "flex") {
+            showCompilationError("Root Launcher", err.message);
+          }
+        }
+      }
+
+      window.addEventListener("DOMContentLoaded", launchAdminPortal);
+    </script>
+  </body>
+</html>

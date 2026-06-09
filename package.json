@@ -1,0 +1,20 @@
+{
+  "name": "zooda-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "backend",
+    "shared"
+  ],
+  "scripts": {
+    "dev:user": "npm run dev --workspace=apps/user-web",
+    "dev:client": "npm run dev --workspace=apps/client-web",
+    "dev:admin": "npm run dev --workspace=apps/admin-web",
+    "dev:backend": "npm run dev --workspace=backend",
+    "build:user": "npm run build --workspace=apps/user-web",
+    "build:client": "npm run build --workspace=apps/client-web",
+    "build:admin": "npm run build --workspace=apps/admin-web",
+    "build:all": "npm run build --workspaces --if-present"
+  }
+}

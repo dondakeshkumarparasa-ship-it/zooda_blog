@@ -1,0 +1,30 @@
+.dashboard-range {
+  display: flex;
+  gap: 6px;
+  padding: 6px;
+  border-radius: 999px;
+  border: 1px solid hsl(var(--border));
+  background: hsl(var(--card));
+}
+
+.range-btn {
+  padding: 8px 12px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 999px;
+  color: hsl(var(--muted-foreground));
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.range-btn:hover {
+  background: hsl(var(--secondary));
+  color: hsl(var(--foreground));
+}
+
+.range-btn.active {
+  background: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+}
