@@ -1,14 +1,15 @@
 // backend/lib/embeddings.js ✅ FULL UPDATED (safe + stable)
-const { pipeline, env } = require("@xenova/transformers");
-
-// Configure cache directory for write-access in Vercel Serverless environment
-env.cacheDir = "/tmp";
-
 let embedderPromise = null;
 
 // Loads once (downloads model files on first run)
 async function getEmbedder() {
   if (!embedderPromise) {
+    // Dynamically import ES Module @xenova/transformers in CommonJS
+    const { pipeline, env } = await import("@xenova/transformers");
+    
+    // Configure cache directory for write-access in Vercel Serverless environment
+    env.cacheDir = "/tmp";
+
     embedderPromise = pipeline("feature-extraction", "Xenova/all-MiniLM-L6-v2");
   }
   return embedderPromise;
