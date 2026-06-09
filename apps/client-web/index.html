@@ -2088,7 +2088,7 @@
       const api = axios.create({
         baseURL: (localStorage.getItem("use_local_backend") === "true")
           ? 'http://localhost:5000/api'
-          : 'https://api.zooda.in/api',
+          : 'https://zooda.vercel.app/api',
         headers: { 'Accept': 'application/json' }
       });
 
@@ -3591,7 +3591,7 @@
 
           const zip = new JSZip();
           const pluginFolder = zip.folder("zooda-woocommerce-sync");
-          const currentApiBaseUrl = api.defaults.baseURL ? api.defaults.baseURL.replace(/\/api$/, '') : 'https://api.zooda.in';
+          const currentApiBaseUrl = api.defaults.baseURL ? api.defaults.baseURL.replace(/\/api$/, '') : 'https://zooda.vercel.app';
 
           const pluginPhpContent = `<?php
 /**
@@ -5488,7 +5488,7 @@ This plugin connects your WooCommerce store to Zooda. It automatically sends you
   };
   (function() {
     var s = document.createElement('script');
-    s.src = 'https://api.zooda.in/sdk/shopify-sync.js';
+    s.src = 'https://zooda.vercel.app/sdk/shopify-sync.js';
     s.async = true;
     document.body.appendChild(s);
   })();
@@ -5526,7 +5526,7 @@ This plugin connects your WooCommerce store to Zooda. It automatically sends you
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
     js = d.createElement(s); js.id = id;
-    js.src = "https://api.zooda.in/sdk/zooda-sync.js";
+    js.src = "https://zooda.vercel.app/sdk/zooda-sync.js";
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'zooda-sync-sdk'));
 <\/script>`}</div>

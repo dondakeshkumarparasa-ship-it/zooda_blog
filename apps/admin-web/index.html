@@ -405,11 +405,11 @@
 
       // Global Axios Request Interceptor to dynamically redirect requests to the local backend during development
       axios.interceptors.request.use((config) => {
-        if (config.url && config.url.includes("https://api.zooda.in")) {
+        if (config.url && config.url.includes("https://zooda.vercel.app")) {
           const localBase = (localStorage.getItem("use_local_backend") === "true")
             ? "http://localhost:5000"
-            : "https://api.zooda.in";
-          config.url = config.url.replace("https://api.zooda.in", localBase);
+            : "https://zooda.vercel.app";
+          config.url = config.url.replace("https://zooda.vercel.app", localBase);
         }
         return config;
       });
@@ -883,7 +883,7 @@
           updateProgress("Compiling " + finalPath.split("/").pop() + "...");
           try {
             // Support Vite env variables and import.meta directly in the browser
-            let cleanedSource = source.replace(/import\.meta\.env\.VITE_API_URL/g, '(localStorage.getItem("use_local_backend") === "true") ? "http://localhost:5000/api" : "https://api.zooda.in/api"');
+            let cleanedSource = source.replace(/import\.meta\.env\.VITE_API_URL/g, '(localStorage.getItem("use_local_backend") === "true") ? "http://localhost:5000/api" : "https://zooda.vercel.app/api"');
             cleanedSource = cleanedSource.replace(/import\.meta\.env/g, '{}');
             cleanedSource = cleanedSource.replace(/import\.meta/g, '{}');
 

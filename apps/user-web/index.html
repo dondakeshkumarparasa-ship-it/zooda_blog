@@ -485,7 +485,7 @@
       } else {
         updateProgress("Compiling " + finalPath.split("/").pop() + "...");
         try {
-          let cleanedSource = source.replace(/import\.meta\.env\.VITE_API_URL/g, '(localStorage.getItem("use_local_backend") === "true") ? "http://localhost:5000/api" : "https://api.zooda.in/api"');
+          let cleanedSource = source.replace(/import\.meta\.env\.VITE_API_URL/g, '(localStorage.getItem("use_local_backend") === "true") ? "http://localhost:5000/api" : "https://zooda.vercel.app/api"');
           cleanedSource = cleanedSource.replace(/import\.meta\.env/g, '{}');
           cleanedSource = cleanedSource.replace(/import\.meta/g, '{}');
 

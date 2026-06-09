@@ -63,7 +63,7 @@ const getFollowing = async (req, res) => {
     const followingBusinesses = (user.following || []).map(business => {
       const businessObj = business.toObject();
       if (businessObj.logoUrl && !businessObj.logoUrl.startsWith("http")) {
-        businessObj.logoUrl = `${process.env.API_BASE_URL || 'https://api.zooda.in'}${businessObj.logoUrl.startsWith("/") ? "" : "/"}${businessObj.logoUrl}`;
+        businessObj.logoUrl = `${process.env.API_BASE_URL || 'https://zooda.vercel.app'}${businessObj.logoUrl.startsWith("/") ? "" : "/"}${businessObj.logoUrl}`;
       }
       if (businessObj.businessName) {
         businessObj.username = businessObj.businessName.toLowerCase().replace(/[\s.]/g, "_");
@@ -172,7 +172,7 @@ const getFollowingPosts = async (req, res) => {
       if (postObj.business && postObj.business.logoUrl) {
         let logoUrl = postObj.business.logoUrl;
         if (!logoUrl.startsWith("http")) {
-          logoUrl = `${process.env.API_BASE_URL || 'https://api.zooda.in'}${logoUrl.startsWith("/") ? "" : "/"}${logoUrl}`;
+          logoUrl = `${process.env.API_BASE_URL || 'https://zooda.vercel.app'}${logoUrl.startsWith("/") ? "" : "/"}${logoUrl}`;
         }
         postObj.business.logoUrl = logoUrl;
       }
@@ -234,7 +234,7 @@ const getUnfollowedPosts = async (req, res) => {
       if (postObj.business && postObj.business.logoUrl) {
         let logoUrl = postObj.business.logoUrl;
         if (!logoUrl.startsWith("http")) {
-          logoUrl = `${process.env.API_BASE_URL || 'https://api.zooda.in'}${logoUrl.startsWith("/") ? "" : "/"}${logoUrl}`;
+          logoUrl = `${process.env.API_BASE_URL || 'https://zooda.vercel.app'}${logoUrl.startsWith("/") ? "" : "/"}${logoUrl}`;
         }
         postObj.business.logoUrl = logoUrl;
       }

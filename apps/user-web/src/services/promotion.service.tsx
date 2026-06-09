@@ -1,4 +1,4 @@
-const API_BASE_URL = "https://api.zooda.in"; // update to your backend URL if needed
+const API_BASE_URL = "https://zooda.vercel.app"; // update to your backend URL if needed
 
 export interface Promotion {
   id?: string;

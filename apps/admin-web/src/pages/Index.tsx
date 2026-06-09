@@ -16,7 +16,7 @@ import { AdminPagesTab } from "@/components/admin/tabs/AdminPagesTab";
 
 const API_BASE = (localStorage.getItem("use_local_backend") === "true")
   ? "http://localhost:5000/api"
-  : "https://api.zooda.in/api";
+  : "https://zooda.vercel.app/api";
 const DEFAULT_PASSWORD = "zooda";
 
 // local keys

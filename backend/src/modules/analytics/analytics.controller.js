@@ -536,7 +536,7 @@ const getCompanyDetails = async (req, res) => {
     if (companyObj.logoUrl) {
       let logoUrl = companyObj.logoUrl;
       if (!logoUrl.startsWith("http")) {
-        logoUrl = `${process.env.API_BASE_URL || 'https://api.zooda.in'}${logoUrl.startsWith("/") ? "" : "/"}${logoUrl}`;
+        logoUrl = `${process.env.API_BASE_URL || 'https://zooda.vercel.app'}${logoUrl.startsWith("/") ? "" : "/"}${logoUrl}`;
       }
       companyObj.logoUrl = logoUrl;
     }

@@ -7,7 +7,7 @@
 
   // Retrieve current script source to dynamically resolve the API base URL
   var scriptTag = document.currentScript;
-  var apiBaseUrl = "https://api.zooda.in";
+  var apiBaseUrl = "https://zooda.vercel.app";
   if (scriptTag && scriptTag.src) {
     try {
       var scriptUrl = new URL(scriptTag.src);

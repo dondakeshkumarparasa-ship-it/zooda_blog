@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://api.zooda.in/api';
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://zooda.vercel.app/api';
 
 const api = axios.create({
   baseURL: API_BASE_URL,

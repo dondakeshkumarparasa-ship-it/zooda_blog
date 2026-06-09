@@ -282,13 +282,13 @@ interface Promotion {
 
 const API_BASE_URL = (localStorage.getItem("use_local_backend") === "true")
   ? "http://localhost:5000"
-  : "https://api.zooda.in";
+  : "https://zooda.vercel.app";
 
 
 
 const getActivePromotions = async (): Promise<Promotion[]> => {
   try {
-    const response = await axios.get(`https://api.zooda.in/api/promotion`);
+    const response = await axios.get(`https://zooda.vercel.app/api/promotion`);
 
     if (response.data.success && Array.isArray(response.data.data)) {
       return response.data.data.map((promo: any) => ({
@@ -3565,7 +3565,7 @@ const InstagramPostModal = ({
       if (!user?._id || !company._id) return;
       try {
         const res = await axios.get(
-          `https://api.zooda.in/api/follow/${company._id}/status/${user._id}`
+          `https://zooda.vercel.app/api/follow/${company._id}/status/${user._id}`
         );
         setIsFollowing(res.data.isFollowing);
       } catch (err) {
@@ -3619,7 +3619,7 @@ const InstagramPostModal = ({
     }
     setFollowLoading(true);
     try {
-      const res = await axios.post(`https://api.zooda.in/api/follow/${company._id}`, {
+      const res = await axios.post(`https://zooda.vercel.app/api/follow/${company._id}`, {
         userId: user._id,
       });
       if (res.data.success) {
@@ -3838,25 +3838,25 @@ const AllPostsPage = ({ onSelectPost, user, onLoginRequest, onVisitSite }: AllPo
       // ==========================================
       if (!user?._id) {
         console.log('Fetching all public posts...');
-        const businessRes = await axios.get(`https://api.zooda.in/api/business/all`);
+        const businessRes = await axios.get(`https://zooda.vercel.app/api/business/all`);
         const businesses = Array.isArray(businessRes.data) ? businessRes.data : businessRes.data.businesses || [];
 
         let allPublicPosts: any[] = [];
 
         await Promise.all(businesses.map(async (business: any) => {
           try {
-            const postRes = await axios.get(`https://api.zooda.in/api/post/${business._id}`);
+            const postRes = await axios.get(`https://zooda.vercel.app/api/post/${business._id}`);
             const bPosts = postRes.data.posts || [];
 
             const formattedPosts = bPosts.map((post: any, i: number) => {
               let imageUrl = post.media?.[0]?.url || post.mediaUrl || post.imageUrl || `https://picsum.photos/600/400?random=${business._id}-${i}`;
               if (!imageUrl.startsWith("http")) {
-                imageUrl = `https://api.zooda.in${imageUrl.startsWith("/") ? "" : "/"}${imageUrl}`;
+                imageUrl = `https://zooda.vercel.app${imageUrl.startsWith("/") ? "" : "/"}${imageUrl}`;
               }
 
               let logoUrl = business.logoUrl;
               if (logoUrl && !logoUrl.startsWith("http")) {
-                logoUrl = `https://api.zooda.in${logoUrl.startsWith("/") ? "" : "/"}${logoUrl}`;
+                logoUrl = `https://zooda.vercel.app${logoUrl.startsWith("/") ? "" : "/"}${logoUrl}`;
               }
 
               return {
@@ -3892,8 +3892,8 @@ const AllPostsPage = ({ onSelectPost, user, onLoginRequest, onVisitSite }: AllPo
         // LOGGED IN MODE: Fetch Following/Unfollowing
         // ==========================================
         const endpoint = activeTab === "Following"
-          ? `https://api.zooda.in/api/posts/following/${user._id}`
-          : `https://api.zooda.in/api/posts/unfollowed/${user._id}`;
+          ? `https://zooda.vercel.app/api/posts/following/${user._id}`
+          : `https://zooda.vercel.app/api/posts/unfollowed/${user._id}`;
 
         console.log('Fetching posts from:', endpoint);
         const response = await axios.get(endpoint);
@@ -3903,19 +3903,19 @@ const AllPostsPage = ({ onSelectPost, user, onLoginRequest, onVisitSite }: AllPo
           const processed = await Promise.all(
             data.posts.map(async (post: any, i: number) => {
               let imageUrl = post.media?.[0]?.url || post.mediaUrl || post.imageUrl || `https://picsum.photos/600/400?random=${i}`;
-              if (!imageUrl.startsWith("http")) imageUrl = `https://api.zooda.in${imageUrl.startsWith("/") ? "" : "/"}${imageUrl}`;
+              if (!imageUrl.startsWith("http")) imageUrl = `https://zooda.vercel.app${imageUrl.startsWith("/") ? "" : "/"}${imageUrl}`;
 
               let company = null;
               const companyId = post.business?._id || post.business;
               
               if (companyId) {
                 try {
-                  const companyResponse = await axios.get(`https://api.zooda.in/api/companies/${companyId}`);
+                  const companyResponse = await axios.get(`https://zooda.vercel.app/api/companies/${companyId}`);
                   if (companyResponse.data.success) {
                     company = companyResponse.data.company;
                     if (company.logoUrl) {
                       let logoUrl = company.logoUrl;
-                      if (!logoUrl.startsWith("http")) logoUrl = `https://api.zooda.in${logoUrl.startsWith("/") ? "" : "/"}${logoUrl}`;
+                      if (!logoUrl.startsWith("http")) logoUrl = `https://zooda.vercel.app${logoUrl.startsWith("/") ? "" : "/"}${logoUrl}`;
                       company.logoUrl = logoUrl;
                     }
                     if (company.businessName) {
@@ -3930,7 +3930,7 @@ const AllPostsPage = ({ onSelectPost, user, onLoginRequest, onVisitSite }: AllPo
 
               let isLiked = false;
               try {
-                const likeResponse = await axios.get(`https://api.zooda.in/api/post/${post._id}/like-status/${user._id}`);
+                const likeResponse = await axios.get(`https://zooda.vercel.app/api/post/${post._id}/like-status/${user._id}`);
                 if (likeResponse.data.success !== false) isLiked = likeResponse.data.isLiked || false;
               } catch (err) {
                 isLiked = false;
@@ -4013,7 +4013,7 @@ const AllPostsPage = ({ onSelectPost, user, onLoginRequest, onVisitSite }: AllPo
       };
       setPosts(updatedPosts);
 
-      const response = await axios.post(`https://api.zooda.in/api/post/${postId}/like`, { userId: user._id });
+      const response = await axios.post(`https://zooda.vercel.app/api/post/${postId}/like`, { userId: user._id });
 
       if (response.data.success) {
         const finalUpdatedPosts = [...posts];
@@ -4056,7 +4056,7 @@ const AllPostsPage = ({ onSelectPost, user, onLoginRequest, onVisitSite }: AllPo
     if (!commentText.trim()) return { success: false, error: "Comment cannot be empty" };
 
     try {
-      const response = await axios.post(`https://api.zooda.in/api/post/${postId}/comment`, {
+      const response = await axios.post(`https://zooda.vercel.app/api/post/${postId}/comment`, {
         text: commentText,
         userId: user._id,
       });
@@ -4230,7 +4230,7 @@ const AllPostsPage = ({ onSelectPost, user, onLoginRequest, onVisitSite }: AllPo
                      (post.mediaUrl && (post.mediaUrl.endsWith('.mp4') || post.mediaUrl.endsWith('.webm') || post.mediaUrl.endsWith('.mov') || post.mediaUrl.includes('video/upload'))) ||
                      (post.imageUrl && (post.imageUrl.endsWith('.mp4') || post.imageUrl.endsWith('.webm') || post.imageUrl.endsWith('.mov') || post.imageUrl.includes('video/upload'))) ? (
                       <video
-                        src={post.mediaUrl && !post.mediaUrl.startsWith("http") ? `https://api.zooda.in${post.mediaUrl.startsWith("/") ? "" : "/"}${post.mediaUrl}` : (post.mediaUrl || post.imageUrl)}
+                        src={post.mediaUrl && !post.mediaUrl.startsWith("http") ? `https://zooda.vercel.app${post.mediaUrl.startsWith("/") ? "" : "/"}${post.mediaUrl}` : (post.mediaUrl || post.imageUrl)}
                         className="reel-video w-full h-full object-contain"
                         controls
                         loop
@@ -4275,7 +4275,7 @@ const AllPostsPage = ({ onSelectPost, user, onLoginRequest, onVisitSite }: AllPo
                               return;
                             }
                             try {
-                              await axios.post(`https://api.zooda.in/api/follow/${post.company?._id}`, { userId: user._id });
+                              await axios.post(`https://zooda.vercel.app/api/follow/${post.company?._id}`, { userId: user._id });
                               refreshPosts();
                             } catch (err) {
                               console.error("Error following in reels:", err);
@@ -4475,7 +4475,7 @@ const PostGridItem = ({
       try {
         console.log('Fetching comments for post:', post._id);
         const response = await axios.get(
-          `https://api.zooda.in/api/post/${post._id}/comments`
+          `https://zooda.vercel.app/api/post/${post._id}/comments`
         );
         console.log('Comments response:', response.data);
         
@@ -4517,7 +4517,7 @@ const PostGridItem = ({
         // Refresh comments after successful comment
         try {
           const response = await axios.get(
-            `https://api.zooda.in/api/post/${post._id}/comments`
+            `https://zooda.vercel.app/api/post/${post._id}/comments`
           );
           if (response.data.success !== false) {
             setPostComments(response.data.comments || []);
@@ -7181,7 +7181,7 @@ const ChatsPage = ({ user, navigateTo, onLoginRequest }: ChatsPageProps) => {
       return;
     }
     try {
-      const res = await axios.get("https://api.zooda.in/api/chats/customer", {
+      const res = await axios.get("https://zooda.vercel.app/api/chats/customer", {
         headers: { Authorization: `Bearer ${token}` }
       });
       if (res.data.success) {
@@ -7268,7 +7268,7 @@ const ChatsPage = ({ user, navigateTo, onLoginRequest }: ChatsPageProps) => {
     setLoadingMessages(true);
     try {
       const res = await axios.get(
-        `https://api.zooda.in/api/chats/history?businessId=${selectedThread.business._id}&userId=${user.id || user._id}`
+        `https://zooda.vercel.app/api/chats/history?businessId=${selectedThread.business._id}&userId=${user.id || user._id}`
       );
       if (res.data.success) {
         setMessages(res.data.messages);
@@ -7356,7 +7356,7 @@ const ChatsPage = ({ user, navigateTo, onLoginRequest }: ChatsPageProps) => {
     const token = localStorage.getItem("authToken");
     try {
       const res = await axios.post(
-        "https://api.zooda.in/api/chats/customer/send",
+        "https://zooda.vercel.app/api/chats/customer/send",
         { businessId: selectedThread.business._id, text },
         { headers: { Authorization: `Bearer ${token}` } }
       );

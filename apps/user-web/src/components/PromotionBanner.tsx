@@ -10,7 +10,7 @@ const PromotionBanner: React.FC<PromotionBannerProps> = ({ promotion, onClaimOff
   const getImageUrl = () => {
     if (!promotion.imageUrl && !promotion.image) return "";
     const url = promotion.imageUrl || promotion.image || "";
-    return url.startsWith("http") ? url : `https://api.zooda.in${url}`;
+    return url.startsWith("http") ? url : `https://zooda.vercel.app${url}`;
   };
 
   const getDiscountDisplay = () => {
