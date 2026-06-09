@@ -1,0 +1,74 @@
+[
+  {
+    "_id": "69ef51f8f28068725343275a",
+    "name": "AI",
+    "subcategories": [],
+    "createdAt": "2026-04-27T12:09:28.723Z",
+    "updatedAt": "2026-05-11T03:50:43.255Z",
+    "__v": 2
+  },
+  {
+    "_id": "69b27ccc1ba30f8479e905b0",
+    "name": "Digital Marketing",
+    "subcategories": [],
+    "createdAt": "2026-03-12T08:43:56.930Z",
+    "updatedAt": "2026-03-12T08:43:56.930Z",
+    "__v": 0
+  },
+  {
+    "_id": "69841f3928945c3838ae25d6",
+    "name": "Event planners",
+    "subcategories": [],
+    "createdAt": "2026-02-05T04:40:25.229Z",
+    "updatedAt": "2026-02-05T04:40:25.229Z",
+    "__v": 0
+  },
+  {
+    "_id": "6965e40563ff2988f6e87c16",
+    "name": "Fashion",
+    "subcategories": [],
+    "createdAt": "2026-01-13T06:19:49.939Z",
+    "updatedAt": "2026-01-13T06:19:49.939Z",
+    "__v": 0
+  },
+  {
+    "_id": "69841e6928945c3838ae25a3",
+    "name": "Food and Agriculture",
+    "subcategories": [],
+    "createdAt": "2026-02-05T04:36:57.090Z",
+    "updatedAt": "2026-02-05T04:36:57.090Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f1f64ef280687253462675",
+    "name": "Government",
+    "subcategories": [],
+    "createdAt": "2026-04-29T12:15:10.796Z",
+    "updatedAt": "2026-04-29T12:15:10.796Z",
+    "__v": 0
+  },
+  {
+    "_id": "69841e8528945c3838ae25c5",
+    "name": "Interior Designing",
+    "subcategories": [],
+    "createdAt": "2026-02-05T04:37:25.331Z",
+    "updatedAt": "2026-02-05T04:37:25.331Z",
+    "__v": 0
+  },
+  {
+    "_id": "6965d32663ff2988f6e87980",
+    "name": "LMS",
+    "subcategories": [],
+    "createdAt": "2026-01-13T05:07:50.649Z",
+    "updatedAt": "2026-01-13T05:07:50.649Z",
+    "__v": 0
+  },
+  {
+    "_id": "69841e7328945c3838ae25b4",
+    "name": "Others",
+    "subcategories": [],
+    "createdAt": "2026-02-05T04:37:07.095Z",
+    "updatedAt": "2026-02-05T04:37:07.095Z",
+    "__v": 0
+  }
+]

@@ -1,0 +1,1316 @@
+[
+  {
+    "businessName": "Shazam farms",
+    "businessId": "6a0812a4f8c2d489abc50239",
+    "_id": "6a081224f8c2d489abc5022d",
+    "firstName": "Shazam",
+    "lastName": "farms",
+    "email": "hr.shazamfarms@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Mee ticket",
+    "businessId": "6a080eb1f8c2d489abc4d415",
+    "_id": "6a080cf0f8c2d489abc4d0ac",
+    "firstName": "Mee",
+    "lastName": "Ticket",
+    "email": "hr.meeticket@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Phet colorado",
+    "businessId": "6a080b43f8c2d489abc4d02b",
+    "_id": "6a080a3df8c2d489abc4d021",
+    "firstName": "Phet",
+    "lastName": "colorado",
+    "email": "hr.phetcolorado@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Human bio digital",
+    "businessId": "6a0807c6f8c2d489abc4cf3d",
+    "_id": "6a0805e9f8c2d489abc4cf32",
+    "firstName": "Human",
+    "lastName": "biodigital",
+    "email": "hr.humanbiodigital@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "The south factory",
+    "businessId": "6a070589f8c2d489abc3f3cb",
+    "_id": "6a070523f8c2d489abc3f3bf",
+    "firstName": "Thesouth",
+    "lastName": "factory",
+    "email": "hr.thesouthfactory@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Sharepal",
+    "businessId": "6a070127f8c2d489abc3e89e",
+    "_id": "6a07007af8c2d489abc3e892",
+    "firstName": "Share",
+    "lastName": "pal",
+    "email": "hr.sharepal@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Biryani factory.",
+    "businessId": "6a06fe70f8c2d489abc3e81a",
+    "_id": "6a06fe30f8c2d489abc3e810",
+    "firstName": "Biryani",
+    "lastName": "factory",
+    "email": "hr.biryanifactory@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Tara fresh basket",
+    "businessId": "6a06fba7f8c2d489abc3e3c6",
+    "_id": "6a06faa9f8c2d489abc3d791",
+    "firstName": "Tarafresh",
+    "lastName": "basket",
+    "email": "hr.tarafreshbasket@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Pro hire networks",
+    "businessId": "6a0563ccf8c2d489abc1c905",
+    "_id": "6a056347f8c2d489abc1c0b5",
+    "firstName": "Prohire",
+    "lastName": "networks",
+    "email": "hr.prohirenetworks@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Rabito eats",
+    "businessId": "6a0467aef8c2d489abc0e00f",
+    "_id": "6a0466def8c2d489abc0e005",
+    "firstName": "Rabitoeats",
+    "lastName": "eats",
+    "email": "hr.rabitoeats@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Sisira organics",
+    "businessId": "6a045ec0f8c2d489abc0cf19",
+    "_id": "6a045e01f8c2d489abc0c4d5",
+    "firstName": "Sisira",
+    "lastName": "organics",
+    "email": "hr.sisiraorganics@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Pahel agro tech",
+    "businessId": "6a045baff8c2d489abc0a085",
+    "_id": "6a045b12f8c2d489abc0968f",
+    "firstName": "Pahel",
+    "lastName": "agrotech",
+    "email": "hr.pahelagrotech@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Qlearme",
+    "businessId": "6a040852f8c2d489abbff9b8",
+    "_id": "6a0407d2f8c2d489abbff9ac",
+    "firstName": "Qlear",
+    "lastName": "me",
+    "email": "hr.qlearme@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Sidsfarm",
+    "businessId": "6a030f60f8c2d489abbf5429",
+    "_id": "6a030e2bf8c2d489abbf4643",
+    "firstName": "Sids",
+    "lastName": "farm",
+    "email": "hr.sidsfarm@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Sepal",
+    "businessId": "6a02c863f8c2d489abbeef43",
+    "_id": "6a02c7c4f8c2d489abbeef39",
+    "firstName": "Sepal",
+    "lastName": "in",
+    "email": "hr.sepal@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Life stone",
+    "businessId": "6a02c61ff8c2d489abbeeed6",
+    "_id": "6a02c57cf8c2d489abbeeecc",
+    "firstName": "Life",
+    "lastName": "stone",
+    "email": "hr.lifestone@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "My harvest farms",
+    "businessId": "6a02c3d5f8c2d489abbee9bf",
+    "_id": "6a02c340f8c2d489abbee9b5",
+    "firstName": "Myharvest",
+    "lastName": "farms",
+    "email": "hr.myharvestfarms@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Plant spotify",
+    "businessId": "6a02c1faf8c2d489abbee56a",
+    "_id": "6a02c17ff8c2d489abbee560",
+    "firstName": "Plant",
+    "lastName": "spotify",
+    "email": "hr.plantspotify@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Earth pure seeds co",
+    "businessId": "6a02be9ff8c2d489abbecbce",
+    "_id": "6a02be16f8c2d489abbec4d8",
+    "firstName": "Earthpure",
+    "lastName": "seedsco",
+    "email": "hr.earthpureseedsco@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Sumadhura foods",
+    "businessId": "6a02bd53f8c2d489abbeba1a",
+    "_id": "6a02bcdaf8c2d489abbeb36c",
+    "firstName": "Sumadhura",
+    "lastName": "foods",
+    "email": "hr.sumadhurafoods@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Invite sutra",
+    "businessId": "6a01d565f8c2d489abbe3123",
+    "_id": "6a01d4e5f8c2d489abbe273e",
+    "firstName": "Invite",
+    "lastName": "sutra",
+    "email": "hr.invitesutra@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Hydra lakes",
+    "businessId": "6a01d362f8c2d489abbdfde4",
+    "_id": "6a01d318f8c2d489abbdf7a8",
+    "firstName": "Hydra",
+    "lastName": "lakes",
+    "email": "hr.hydralakes@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Re loop today",
+    "businessId": "6a01ce86f8c2d489abbd3827",
+    "_id": "6a01ce19f8c2d489abbd2e66",
+    "firstName": "Reloop",
+    "lastName": "today",
+    "email": "hr.relooptoday@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Reebuy",
+    "businessId": "6a01cacff8c2d489abbcf4fb",
+    "_id": "6a01ca38f8c2d489abbce922",
+    "firstName": "Ree",
+    "lastName": "buy",
+    "email": "hr.reebuy@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Livemeat",
+    "businessId": "6a01c71af8c2d489abbca721",
+    "_id": "6a01c667f8c2d489abbc9871",
+    "firstName": "Live",
+    "lastName": "meat",
+    "email": "hr.livemeat@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Purshottam",
+    "businessId": "6a016ba0f8c2d489abbbd8c5",
+    "_id": "6a016b21f8c2d489abbbd16e",
+    "firstName": "Purshottam",
+    "lastName": "in",
+    "email": "hr.purshottam@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "We hydroponics",
+    "businessId": "6a01697ff8c2d489abbbbb29",
+    "_id": "6a016931f8c2d489abbbbb1d",
+    "firstName": "We",
+    "lastName": "hydroponics",
+    "email": "hr.wehydroponics@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Tailoes",
+    "businessId": "6a0168ddf8c2d489abbbbacf",
+    "_id": "6a016864f8c2d489abbbbac3",
+    "firstName": "Tailoes",
+    "lastName": "com",
+    "email": "hr.tailoes@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "White house cashew",
+    "businessId": "6a016257f8c2d489abbbb547",
+    "_id": "6a0161c2f8c2d489abbbabdb",
+    "firstName": "Whitehouse",
+    "lastName": "cashew",
+    "email": "hr.whitehousecashew@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Brahmana kitchen",
+    "businessId": "6a0160c3f8c2d489abbba3d7",
+    "_id": "6a016064f8c2d489abbb9e0d",
+    "firstName": "Brahmana",
+    "lastName": "kitchen",
+    "email": "hr.brahmanakitchen@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Vanashree organics",
+    "businessId": "6a015f42f8c2d489abbb8f29",
+    "_id": "6a015ec0f8c2d489abbb872d",
+    "firstName": "Vanashree",
+    "lastName": "organics",
+    "email": "hr.vanashreeorganics@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "The sea food mart",
+    "businessId": "6a015c45f8c2d489abbb63c7",
+    "_id": "6a015bacf8c2d489abbb5a9f",
+    "firstName": "Thesea",
+    "lastName": "foodmart",
+    "email": "hr.theseafoodmart@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Aquaticexotica",
+    "businessId": "6a01568af8c2d489abbb1799",
+    "_id": "6a0155a5f8c2d489abbb126e",
+    "firstName": "Aquatic",
+    "lastName": "exotica",
+    "email": "hr.aquaticexotica@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Studiodecspace",
+    "businessId": "6a0153ddf8c2d489abbaeef7",
+    "_id": "6a0153a0f8c2d489abbae884",
+    "firstName": "Studiodec",
+    "lastName": "space",
+    "email": "hr.studiodecspace@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Swasthamg",
+    "businessId": "6a015177f8c2d489abbaac5d",
+    "_id": "6a014ec2f8c2d489abba7b6e",
+    "firstName": "Swastha",
+    "lastName": "mg",
+    "email": "hr.swasthamg@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "What2cook",
+    "businessId": "6a014c9ff8c2d489abba497d",
+    "_id": "6a014c18f8c2d489abba441f",
+    "firstName": "what",
+    "lastName": "2cook",
+    "email": "hr.what2cook@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "h2a2",
+    "businessId": "6a014b3af8c2d489abba3edc",
+    "_id": "6a014adff8c2d489abba3e10",
+    "firstName": "h2",
+    "lastName": "a2",
+    "email": "hr.h2a2@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Algaetree",
+    "businessId": "69fee040f8c2d489abba2f3a",
+    "_id": "69fedfdaf8c2d489abba2f30",
+    "firstName": "Algae",
+    "lastName": "Tree",
+    "email": "hr.algaetree@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Imsafeapp",
+    "businessId": "69fedec9f8c2d489abba2aed",
+    "_id": "69fede67f8c2d489abba2ae3",
+    "firstName": "Im",
+    "lastName": "safe",
+    "email": "hr.imsafe@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Shorts station",
+    "businessId": "69fed6f7f8c2d489abba26b1",
+    "_id": "69fed676f8c2d489abba26a5",
+    "firstName": "Shorts",
+    "lastName": "Station",
+    "email": "hr.shortsstation@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Prayana ai",
+    "businessId": "69fed56ef8c2d489abba20bf",
+    "_id": "69fed4dcf8c2d489abba20b3",
+    "firstName": "Prayana",
+    "lastName": "ai",
+    "email": "hr.prayanaai@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Vanara",
+    "businessId": "69fed34cf8c2d489abba1e4d",
+    "_id": "69fed2aff8c2d489abba1e41",
+    "firstName": "Vanara",
+    "lastName": "co",
+    "email": "hr.vanara@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Enlite",
+    "businessId": "69fed0d7f8c2d489abba1be6",
+    "_id": "69fed044f8c2d489abba1bdc",
+    "firstName": "Enlite",
+    "lastName": "co.in",
+    "email": "hr.enlite@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Craft scape decor",
+    "businessId": "69feceeef8c2d489abba17d7",
+    "_id": "69fece88f8c2d489abba17cd",
+    "firstName": "Craftscape",
+    "lastName": "decor",
+    "email": "hr.craftscapedecor@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Necprefabs",
+    "businessId": "69fecd0ff8c2d489abba0d45",
+    "_id": "69fecc8df8c2d489abba0d3b",
+    "firstName": "Necpre",
+    "lastName": "fabs",
+    "email": "hr.necprefabs@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Rtih",
+    "businessId": "69fecbb4f8c2d489abba08ea",
+    "_id": "69feca89f8c2d489abba08de",
+    "firstName": "Rtih",
+    "lastName": "co.in",
+    "email": "hr.rtih.co.in@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Reaidy",
+    "businessId": "69fec96ef8c2d489abba07fd",
+    "_id": "69fec903f8c2d489abba07f3",
+    "firstName": "Reaidy",
+    "lastName": "Io",
+    "email": "hr.reaidyio@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Ekaam ai",
+    "businessId": "69fec8a9f8c2d489abba0757",
+    "_id": "69fec844f8c2d489abba074b",
+    "firstName": "Ekaam",
+    "lastName": "Ai",
+    "email": "hr.ekaamai@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "22lifestyles",
+    "businessId": "69fec4fff8c2d489abba033b",
+    "_id": "69fec497f8c2d489abba032f",
+    "firstName": "22Life",
+    "lastName": "styles",
+    "email": "hr.22lifestyles@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Easyfish",
+    "businessId": "69fec36cf8c2d489abb9ff79",
+    "_id": "69fec2e3f8c2d489abb9ff6f",
+    "firstName": "Easy",
+    "lastName": "Fish",
+    "email": "hr.easyfish@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Helmio",
+    "businessId": "69febc70f8c2d489abb9b3fc",
+    "_id": "69febc07f8c2d489abb9ab88",
+    "firstName": "Helmio",
+    "lastName": "in",
+    "email": "hr.helmioin@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Dry cleaning house",
+    "businessId": "69fdc158f8c2d489abb95b85",
+    "_id": "69fdc0eaf8c2d489abb95b7b",
+    "firstName": "Dry",
+    "lastName": "Cleaninghouse",
+    "email": "hr.drycleaninghouse@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Getpowernap",
+    "businessId": "69fdbfc1f8c2d489abb9572c",
+    "_id": "69fdbf59f8c2d489abb95722",
+    "firstName": "Get",
+    "lastName": "Powernap",
+    "email": "hr.getpowernap@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Sri rudra",
+    "businessId": "69fdbde8f8c2d489abb95236",
+    "_id": "69fdbd6df8c2d489abb9522c",
+    "firstName": "Sri",
+    "lastName": "Rudra",
+    "email": "hr.srirudra@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Theairpixel",
+    "businessId": "69fdb809f8c2d489abb93b3a",
+    "_id": "69fdb7e0f8c2d489abb93b30",
+    "firstName": "The",
+    "lastName": "Airpixel",
+    "email": "hr.theairpixel@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "India fast",
+    "businessId": "69fdac57f8c2d489abb92b0d",
+    "_id": "69fdababf8c2d489abb92b03",
+    "firstName": "India",
+    "lastName": "Fast",
+    "email": "hr.indiafast@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Naveenorganicmangoes",
+    "businessId": "69fda7dff8c2d489abb9113c",
+    "_id": "69fda784f8c2d489abb91132",
+    "firstName": "Naveen",
+    "lastName": "Organicmangoes",
+    "email": "hr.naveenorganicmangoes@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Getcupi",
+    "businessId": "69fda520f8c2d489abb90c90",
+    "_id": "69fda100f8c2d489abb90c3d",
+    "firstName": "Get",
+    "lastName": "cupi",
+    "email": "hr.getcupi@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Cashbook",
+    "businessId": "69fda01ff8c2d489abb903ac",
+    "_id": "69fd9fcaf8c2d489abb901f9",
+    "firstName": "Cash",
+    "lastName": "Book",
+    "email": "hr.cashbook@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Cashfree",
+    "businessId": "69fd9e32f8c2d489abb8e3cf",
+    "_id": "69fd9db0f8c2d489abb8d894",
+    "firstName": "Cash",
+    "lastName": "Free",
+    "email": "hr.cashfree@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Dolphy",
+    "businessId": "69fd9c15f8c2d489abb8b744",
+    "_id": "69fd9bb0f8c2d489abb8aeb5",
+    "firstName": "Dolphy",
+    "lastName": "in",
+    "email": "hr.dolphyin@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Myhoona",
+    "businessId": "69fd9929f8c2d489abb89d16",
+    "_id": "69fd98b0f8c2d489abb89d0c",
+    "firstName": "My",
+    "lastName": "Hoona",
+    "email": "hr.myhoona@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Smart pixel",
+    "businessId": "69fd96e9f8c2d489abb8931c",
+    "_id": "69fd965ef8c2d489abb89310",
+    "firstName": "Smart",
+    "lastName": "Pixel",
+    "email": "hr.smartpixel@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Yumdude",
+    "businessId": "69fd8f3cf8c2d489abb89181",
+    "_id": "69fd8d19f8c2d489abb88fba",
+    "firstName": "Yum",
+    "lastName": "Dude",
+    "email": "hr.yumdude@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Zyclo fashion",
+    "businessId": "69fd8b7af8c2d489abb88af9",
+    "_id": "69fd8adbf8c2d489abb88aef",
+    "firstName": "Zyclo",
+    "lastName": "Fashion",
+    "email": "hr.zyclofashion@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Rdvp in",
+    "businessId": "69fd8920f8c2d489abb8854f",
+    "_id": "69fd8889f8c2d489abb88543",
+    "firstName": "Rdvp",
+    "lastName": "in",
+    "email": "hr.rdvpin@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Cradlewise",
+    "businessId": "69fd8697f8c2d489abb876c8",
+    "_id": "69fd857af8c2d489abb876be",
+    "firstName": "Cradle",
+    "lastName": "Wise",
+    "email": "hr.cradlewise@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Stag elevators",
+    "businessId": "69f6ea94f8c2d489abb7ffe4",
+    "_id": "69f6e641f8c2d489abb7fe5a",
+    "firstName": "Stag",
+    "lastName": "Elevators",
+    "email": "hr.stagelevators@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "A to z auto parts india",
+    "businessId": "69f5db40f8c2d489abb7df9b",
+    "_id": "69f5da8ef8c2d489abb7d1ba",
+    "firstName": "Atozautoparts",
+    "lastName": "India",
+    "email": "hr.atozautopartsindia@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Archan fire works",
+    "businessId": "69f5da01f8c2d489abb7c728",
+    "_id": "69f5d999f8c2d489abb7bf1d",
+    "firstName": "Archan",
+    "lastName": "Fireworks",
+    "email": "hr.archanfireworks@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Kudale farms",
+    "businessId": "69f5d933f8c2d489abb7b36b",
+    "_id": "69f5d8bff8c2d489abb7aa37",
+    "firstName": "Kudale",
+    "lastName": "Farms",
+    "email": "hr.kudalefarms@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Auto dukan",
+    "businessId": "69f5d742f8c2d489abb78ef0",
+    "_id": "69f5d672f8c2d489abb77db4",
+    "firstName": "Auto",
+    "lastName": "Dukan",
+    "email": "hr.autodukan@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Yara farm care",
+    "businessId": "69f5d541f8c2d489abb76140",
+    "_id": "69f5d4eef8c2d489abb75918",
+    "firstName": "Yara",
+    "lastName": "Farmcare",
+    "email": "hr.farmcare@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Kisan shop",
+    "businessId": "69f5d489f8c2d489abb74fb2",
+    "_id": "69f5d433f8c2d489abb747df",
+    "firstName": "Kisan",
+    "lastName": "Shop",
+    "email": "hr.kisanshop@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Vclean laundry",
+    "businessId": "69f5d3aaf8c2d489abb73b76",
+    "_id": "69f5d34ef8c2d489abb73313",
+    "firstName": "Vclean",
+    "lastName": "Laundry",
+    "email": "hr.vcleanlaundry@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Ask solutions india",
+    "businessId": "69f5cef7f8c2d489abb6c3c3",
+    "_id": "69f5cde8f8c2d489abb6ada5",
+    "firstName": "Ask solutions",
+    "lastName": "India",
+    "email": "hr.asksolutionsindia@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Code wear",
+    "businessId": "69f5cb30f8c2d489abb6598a",
+    "_id": "69f5ca8ff8c2d489abb64a37",
+    "firstName": "Code",
+    "lastName": "Wear",
+    "email": "hr.codewear@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Iaepr",
+    "businessId": "69f5c6d7f8c2d489abb5ea0c",
+    "_id": "69f5c654f8c2d489abb5df28",
+    "firstName": "Iaepr",
+    "lastName": "in",
+    "email": "hr.iaepr@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Interview support ai",
+    "businessId": "69f5c4e9f8c2d489abb5c425",
+    "_id": "69f5c438f8c2d489abb5b789",
+    "firstName": "Interview",
+    "lastName": "Support-ai",
+    "email": "hr.interviewsupportai@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Kisan 360",
+    "businessId": "69f5bed4f8c2d489abb54508",
+    "_id": "69f5be5bf8c2d489abb53c1c",
+    "firstName": "Kisan",
+    "lastName": "360",
+    "email": "hr.kisan360@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Ayyan fireworks",
+    "businessId": "69f5bd62f8c2d489abb52af1",
+    "_id": "69f5bcf4f8c2d489abb52283",
+    "firstName": "Ayyan",
+    "lastName": "Fireworks",
+    "email": "hr.ayyanfireworks@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Apuphi",
+    "businessId": "69f5bbb7f8c2d489abb4fe94",
+    "_id": "69f5bb5ff8c2d489abb4f707",
+    "firstName": "Apu",
+    "lastName": "Phi",
+    "email": "hr.apuphi@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Foto owl",
+    "businessId": "69f5ba8af8c2d489abb4e783",
+    "_id": "69f5ba2ff8c2d489abb4dfb2",
+    "firstName": "Foto",
+    "lastName": "Owl",
+    "email": "hr.fotoowl@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Easy kitchens",
+    "businessId": "69f48639f8c2d489abb47bb3",
+    "_id": "69f485b6f8c2d489abb47165",
+    "firstName": "Easy",
+    "lastName": "Kitchens",
+    "email": "hr.easykitchens@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "ICL Express",
+    "businessId": "69f48320f8c2d489abb44987",
+    "_id": "69f48274f8c2d489abb43c90",
+    "firstName": "ICL",
+    "lastName": "Express",
+    "email": "hr.iclexpress@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Tg private school board details",
+    "businessId": "69f48116f8c2d489abb420f4",
+    "_id": "69f48033f8c2d489abb40f05",
+    "firstName": "TG Private School",
+    "lastName": "Board Details",
+    "email": "hr.tgprivateschoolboarddetails@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Happy home pest control services",
+    "businessId": "69f47fadf8c2d489abb403c6",
+    "_id": "69f47f4ff8c2d489abb3fc0d",
+    "firstName": "Happy home",
+    "lastName": "Pest control services",
+    "email": "hr.happyhomepestcontrolservices@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Smart commerce amazon",
+    "businessId": "69f47edbf8c2d489abb3f352",
+    "_id": "69f47e4af8c2d489abb3e809",
+    "firstName": "Smartcommerce",
+    "lastName": "amazon",
+    "email": "hr.smartcommerceamazon@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Sofa factory",
+    "businessId": "69f47d41f8c2d489abb3d8be",
+    "_id": "69f47cb9f8c2d489abb3cdb4",
+    "firstName": "Sofa",
+    "lastName": "factory",
+    "email": "hr.sofafactory@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Dr guard water proofing",
+    "businessId": "69f47c03f8c2d489abb3bf56",
+    "_id": "69f47b44f8c2d489abb3aff6",
+    "firstName": "Drguard",
+    "lastName": "Waterproofing",
+    "email": "hr.drguardwaterproofing@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Infinity app",
+    "businessId": "69f47780f8c2d489abb37f8d",
+    "_id": "69f476baf8c2d489abb370b3",
+    "firstName": "Infinity",
+    "lastName": "App",
+    "email": "hr.infinityapp@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "3Wrnd",
+    "businessId": "69f4760ef8c2d489abb36414",
+    "_id": "69f475bff8c2d489abb35d2a",
+    "firstName": "3",
+    "lastName": "Wrnd",
+    "email": "hr.3wrnd@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Safe Balconie",
+    "businessId": "69f474e2f8c2d489abb34689",
+    "_id": "69f47449f8c2d489abb339b1",
+    "firstName": "Safe",
+    "lastName": "Balconie",
+    "email": "hr.safebalconie@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Aditya plymart",
+    "businessId": "69f472eef8c2d489abb30eed",
+    "_id": "69f4725ef8c2d489abb3048b",
+    "firstName": "Aditya",
+    "lastName": "Plymart",
+    "email": "hr.adityaplymart@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Lyfful",
+    "businessId": "69f46f43f8c2d489abb2d98a",
+    "_id": "69f46ebdf8c2d489abb2d05a",
+    "firstName": "Lyf",
+    "lastName": "ful",
+    "email": "hr.lyfful@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Telugu meme sounds",
+    "businessId": "69f33a43f28068725348fa85",
+    "_id": "69f33a02f28068725348fa79",
+    "firstName": "Telugumeme",
+    "lastName": "Sounds",
+    "email": "hr.telugumemesounds@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Banana pro ai",
+    "businessId": "69f33996f28068725348f9e6",
+    "_id": "69f3393df28068725348f9da",
+    "firstName": "Bananapro",
+    "lastName": "AI",
+    "email": "hr.bananaproai@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Video effects",
+    "businessId": "69f3387cf28068725348f69e",
+    "_id": "69f33833f28068725348f694",
+    "firstName": "Video",
+    "lastName": "Effects",
+    "email": "hr.videoeffects@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Super profile",
+    "businessId": "69f3377af28068725348ef1e",
+    "_id": "69f3371ef28068725348ef12",
+    "firstName": "Super",
+    "lastName": "Profile",
+    "email": "hr.superprofile@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Kissan ai",
+    "businessId": "69f336ccf28068725348ee2b",
+    "_id": "69f33668f28068725348ee1f",
+    "firstName": "Kissan",
+    "lastName": "AI",
+    "email": "hr.kissanai@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Ola krutrim",
+    "businessId": "69f335c2f28068725348e9fb",
+    "_id": "69f33535f28068725348e9ef",
+    "firstName": "Ola",
+    "lastName": "krutrim",
+    "email": "hr.olakrutrim@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Autodraft",
+    "businessId": "69f3257cf28068725348b42c",
+    "_id": "69f324e6f28068725348b422",
+    "firstName": "Auto",
+    "lastName": "draft",
+    "email": "hr.autodraft@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Magicdecor",
+    "businessId": "69f32481f28068725348b215",
+    "_id": "69f3236ff28068725348b209",
+    "firstName": "Magic",
+    "lastName": "Decor",
+    "email": "hr.magicdecor@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Livspace",
+    "businessId": "69f322c0f28068725348aa80",
+    "_id": "69f3223df28068725348aa76",
+    "firstName": "Liv",
+    "lastName": "space",
+    "email": "hr.livspace@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Beautiful AI",
+    "businessId": "69f3208cf2806872534895ac",
+    "_id": "69f32042f2806872534895a0",
+    "firstName": "Beautiful",
+    "lastName": "AI",
+    "email": "hr.beautiful@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Bla bla Car",
+    "businessId": "69f31f3ff280687253488c3d",
+    "_id": "69f31e8cf280687253488c33",
+    "firstName": "Blabla",
+    "lastName": "Car",
+    "email": "hr.blablacar@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "August AI",
+    "businessId": "69f3157bf280687253488257",
+    "_id": "69f314b7f28068725348824b",
+    "firstName": "August",
+    "lastName": "AI",
+    "email": "hr.augustai@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Fresh Works",
+    "businessId": "69f31383f280687253487909",
+    "_id": "69f3132bf2806872534878ff",
+    "firstName": "Fresh",
+    "lastName": "Works",
+    "email": "hr.freshworks@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Sarvam AI",
+    "businessId": "69f30f73f2806872534825fd",
+    "_id": "69f30eddf2806872534825f3",
+    "firstName": "Sarvam",
+    "lastName": "AI",
+    "email": "hr.sarvam@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Light Pdf",
+    "businessId": "69f30e81f2806872534825a2",
+    "_id": "69f30dfcf280687253482596",
+    "firstName": "Light",
+    "lastName": "Pdf",
+    "email": "hr.lightpdf@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Pomelli",
+    "businessId": "69f30a8cf28068725348097c",
+    "_id": "69f30907f2806872534808d0",
+    "firstName": "Pomeli",
+    "lastName": "AI",
+    "email": "hr.pomeli@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Chat autodm",
+    "businessId": "69f306f3f28068725347fbaf",
+    "_id": "69f306a4f28068725347fba3",
+    "firstName": "chat",
+    "lastName": "Autodm",
+    "email": "hr.chatautodm@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Wint Wealth",
+    "businessId": "69f2fb06f28068725347f1e8",
+    "_id": "69f2f9fff28068725347f183",
+    "firstName": "Wint",
+    "lastName": "Wealth",
+    "email": "hr.wintwealth@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Oolka",
+    "businessId": "69f2f7d5f28068725347ecc3",
+    "_id": "69f2f74bf28068725347ecb9",
+    "firstName": "Oolka",
+    "lastName": "Official",
+    "email": "hr.oolka@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Jupiter SEO Tool",
+    "businessId": "69f2e677f28068725347ad9e",
+    "_id": "69f2e5baf28068725347ab8b",
+    "firstName": "Jupiter",
+    "lastName": "SEO Tool",
+    "email": "hr.jupiterseotool@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Rail One",
+    "businessId": "69f2e264f280687253478153",
+    "_id": "69f2e1eaf280687253478149",
+    "firstName": "Rail",
+    "lastName": "one",
+    "email": "hr.railone@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Digi Yatra",
+    "businessId": "69f2e093f2806872534766e7",
+    "_id": "69f2e031f2806872534766dd",
+    "firstName": "Digi",
+    "lastName": "Yatra",
+    "email": "hr.digiyatra@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Digi locker",
+    "businessId": "69f2dde1f2806872534727ed",
+    "_id": "69f2dd76f2806872534727e3",
+    "firstName": "Digi",
+    "lastName": "Locker",
+    "email": "hr.digilocker@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "RBI retail direct",
+    "businessId": "69f2dcc8f280687253471fff",
+    "_id": "69f2dc27f280687253471ff5",
+    "firstName": "RBI",
+    "lastName": "Retail direct",
+    "email": "hr.rbiretaildirect@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Meeseva Telangana",
+    "businessId": "69f1fb40f280687253469d1e",
+    "_id": "69f1fac2f2806872534693a0",
+    "firstName": "Meeseva",
+    "lastName": "Telangana",
+    "email": "hr.meesevatelangana@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Ap whats app gov",
+    "businessId": "69f1fa3ff28068725346875b",
+    "_id": "69f1f983f2806872534678b5",
+    "firstName": "AP",
+    "lastName": "Whatsapp Gov",
+    "email": "hr.apwhatsappgov@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Parivahan",
+    "businessId": "69f1f774f280687253463da8",
+    "_id": "69f1f71bf280687253463677",
+    "firstName": "Pari",
+    "lastName": "vahan",
+    "email": "hr.parivahan@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Flyer Works",
+    "businessId": "69f1f028f28068725345a315",
+    "_id": "69f1eeebf280687253459007",
+    "firstName": "Flyer",
+    "lastName": "Works",
+    "email": "hr.flyerworks@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Dhobi lite",
+    "businessId": "69f1ec87f2806872534560e7",
+    "_id": "69f1ebd6f28068725345531c",
+    "firstName": "Dhobi",
+    "lastName": "Lite",
+    "email": "hr.dhobilite@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Zoho One",
+    "businessId": "69f1eb6df280687253454a06",
+    "_id": "69f1ea60f2806872534537a6",
+    "firstName": "Zoho",
+    "lastName": "One",
+    "email": "hr.zohoone@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Intellemo",
+    "businessId": "69f0a72ff28068725344539d",
+    "_id": "69f0a6a8f28068725344538f",
+    "firstName": "Intellemo",
+    "lastName": "AI",
+    "email": "hr.intellemo@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Predis",
+    "businessId": "69f0a631f2806872534450dc",
+    "_id": "69f0a5c9f2806872534450d0",
+    "firstName": "Predis",
+    "lastName": "AI",
+    "email": "hr.predis@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Virtual Studiox",
+    "businessId": "69f0a4fcf280687253444f91",
+    "_id": "69f0a455f280687253444f85",
+    "firstName": "Virtual",
+    "lastName": "Studiox",
+    "email": "hr.virtualstudiox@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Shoopy",
+    "businessId": "69f0a0b7f2806872534435b5",
+    "_id": "69f09ff8f2806872534428a1",
+    "firstName": "Shoopy",
+    "lastName": "official",
+    "email": "hr.shoopy@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Neo Sapien",
+    "businessId": "69ef52abf280687253432770",
+    "_id": "69ef51def280687253432750",
+    "firstName": "Neo",
+    "lastName": "Sapien",
+    "email": "hr.neosapien@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Jay Kottu",
+    "businessId": "69ef0f98f280687253430e6a",
+    "_id": "69ef0f1bf280687253430e60",
+    "firstName": "Jay",
+    "lastName": "Kottu",
+    "email": "hr.jaykottu@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Your Name in Landsat",
+    "businessId": "69eef92cf2806872534286c5",
+    "_id": "69eef863f2806872534286b9",
+    "firstName": "Your Name",
+    "lastName": "in Landsat",
+    "email": "hr.yournameinlandsat@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "GlovAi",
+    "businessId": "69edaf57f280687253420872",
+    "_id": "69edae90f280687253420866",
+    "firstName": "Glow",
+    "lastName": "VAI",
+    "email": "hr.glowvai@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Surya teja rice store",
+    "businessId": "69ed9032f280687253410e56",
+    "_id": "69ed8ec2f280687253410e45",
+    "firstName": "Surya teja",
+    "lastName": "rice store",
+    "email": "hr.suryatejaricestore@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Maya Gifts",
+    "businessId": "69eb3f77f2806872533cb9aa",
+    "_id": "69eb3ef3f2806872533cb9a0",
+    "firstName": "Maya",
+    "lastName": "Gifts",
+    "email": "hr.mayagifts@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Learn Vistix",
+    "businessId": "69c0d61df280687253147517",
+    "_id": "69c0d54af28068725314750b",
+    "firstName": "Learn",
+    "lastName": "Vistix",
+    "email": "hr.learnvistix@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "The Upliv",
+    "businessId": "69bf5f30f28068725311b1ae",
+    "_id": "69bf5ee7f28068725311b1a2",
+    "firstName": "The",
+    "lastName": "Upliv",
+    "email": "hr.theupliv@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "JB Events",
+    "businessId": "6984519c28945c3838ae350f",
+    "_id": "6984512928945c3838ae3508",
+    "firstName": "JB",
+    "lastName": "Events",
+    "email": "hr.jbevents@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Js Naidu",
+    "businessId": "69843f0128945c3838ae3002",
+    "_id": "69843e7b28945c3838ae2f8e",
+    "firstName": "Js",
+    "lastName": "Naidu",
+    "email": "hr.jsnaidu@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Burman Fox",
+    "businessId": "6974852023806cbea291697c",
+    "_id": "6974837323806cbea2916975",
+    "firstName": "Burman",
+    "lastName": "fox",
+    "email": "hr.burmanfox@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Dehyde",
+    "businessId": "69707a1e63ff2988f6e88cc4",
+    "_id": "697079a163ff2988f6e88cbd",
+    "firstName": "De",
+    "lastName": "hyde",
+    "email": "hr.dehyde@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Inspire leap",
+    "businessId": "696631e563ff2988f6e87da9",
+    "_id": "6966307d63ff2988f6e87da2",
+    "firstName": "Inspire",
+    "lastName": "Leap",
+    "email": "hr.inspireleap@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "WayEva",
+    "businessId": "69662f6063ff2988f6e87ce9",
+    "_id": "69662f0763ff2988f6e87ce2",
+    "firstName": "Way",
+    "lastName": "eva",
+    "email": "hr.wayeva@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Vedupskilling",
+    "businessId": "6965e2ac63ff2988f6e87b8a",
+    "_id": "6965e21c63ff2988f6e87b81",
+    "firstName": "Vedup",
+    "lastName": "skilling",
+    "email": "hr.vedupskilling@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "Vedxlence",
+    "businessId": "6965d84263ff2988f6e87a3c",
+    "_id": "6965d7ed63ff2988f6e87a35",
+    "firstName": "Ved",
+    "lastName": "xlence",
+    "email": "hr.vedxlence@gmail.com",
+    "phone": null
+  },
+  {
+    "businessName": "SprintM",
+    "businessId": "6965d44b63ff2988f6e87997",
+    "_id": "6965d2fd63ff2988f6e8796e",
+    "firstName": "Sprintm",
+    "lastName": "Technologies",
+    "email": "hr.sprintm@gmail.com",
+    "phone": null
+  }
+]

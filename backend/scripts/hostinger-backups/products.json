@@ -1,0 +1,506 @@
+[
+  {
+    "businessName": "Naveenorganicmangoes",
+    "businessId": "69fda7dff8c2d489abb9113c",
+    "_id": "69fda93df8c2d489abb929e9",
+    "name": "Himayath Pasand Mangoes – 10 Kgs",
+    "price": 5000
+  },
+  {
+    "businessName": "Naveenorganicmangoes",
+    "businessId": "69fda7dff8c2d489abb9113c",
+    "_id": "69fda8faf8c2d489abb9247b",
+    "name": "Banginapalli Mamidi – 10 Kgs (Top Quality)",
+    "price": 3000
+  },
+  {
+    "businessName": "Naveenorganicmangoes",
+    "businessId": "69fda7dff8c2d489abb9113c",
+    "_id": "69fda8b8f8c2d489abb91f01",
+    "name": "Adavi Mamidi – 10Kgs",
+    "price": 3500
+  },
+  {
+    "businessName": "Super profile",
+    "businessId": "69f3377af28068725348ef1e",
+    "_id": "69f337c6f28068725348f657",
+    "name": "Creator",
+    "price": 99
+  },
+  {
+    "businessName": "Super profile",
+    "businessId": "69f3377af28068725348ef1e",
+    "_id": "69f337b0f28068725348f424",
+    "name": "Starter",
+    "price": 0
+  },
+  {
+    "businessName": "Fresh Works",
+    "businessId": "69f31383f280687253487909",
+    "_id": "69f31407f280687253488069",
+    "name": "Customer Service",
+    "price": 2299
+  },
+  {
+    "businessName": "Fresh Works",
+    "businessId": "69f31383f280687253487909",
+    "_id": "69f313e5f280687253487de2",
+    "name": "IT Service Management",
+    "price": 1399
+  },
+  {
+    "businessName": "Sarvam AI",
+    "businessId": "69f30f73f2806872534825fd",
+    "_id": "69f312a8f28068725348779c",
+    "name": "Sarvam Models",
+    "price": 0
+  },
+  {
+    "businessName": "Chat autodm",
+    "businessId": "69f306f3f28068725347fbaf",
+    "_id": "69f3077ef280687253480863",
+    "name": "Elite plan",
+    "price": 799
+  },
+  {
+    "businessName": "Chat autodm",
+    "businessId": "69f306f3f28068725347fbaf",
+    "_id": "69f30766f280687253480615",
+    "name": "Pro plan",
+    "price": 499
+  },
+  {
+    "businessName": "Chat autodm",
+    "businessId": "69f306f3f28068725347fbaf",
+    "_id": "69f3074df2806872534803c1",
+    "name": "Free plan",
+    "price": 0
+  },
+  {
+    "businessName": "Wint Wealth",
+    "businessId": "69f2fb06f28068725347f1e8",
+    "_id": "69f2fbd1f28068725347fa1d",
+    "name": "Wint wealth IOS App",
+    "price": 0
+  },
+  {
+    "businessName": "Wint Wealth",
+    "businessId": "69f2fb06f28068725347f1e8",
+    "_id": "69f2fba0f28068725347f5c8",
+    "name": "Wint wealth Android App",
+    "price": 0
+  },
+  {
+    "businessName": "Jupiter SEO Tool",
+    "businessId": "69f2e677f28068725347ad9e",
+    "_id": "69f2f6d4f28068725347eaff",
+    "name": "Heygen ai",
+    "price": 299
+  },
+  {
+    "businessName": "Jupiter SEO Tool",
+    "businessId": "69f2e677f28068725347ad9e",
+    "_id": "69f2f6bbf28068725347e8cc",
+    "name": "Canva Pro",
+    "price": 139
+  },
+  {
+    "businessName": "Jupiter SEO Tool",
+    "businessId": "69f2e677f28068725347ad9e",
+    "_id": "69f2f69ff28068725347e675",
+    "name": "Freepic Premium",
+    "price": 299
+  },
+  {
+    "businessName": "Jupiter SEO Tool",
+    "businessId": "69f2e677f28068725347ad9e",
+    "_id": "69f2f685f28068725347e44e",
+    "name": "Write human AI",
+    "price": 399
+  },
+  {
+    "businessName": "Jupiter SEO Tool",
+    "businessId": "69f2e677f28068725347ad9e",
+    "_id": "69f2f666f28068725347e083",
+    "name": "Chat Gpt Pluse",
+    "price": 399
+  },
+  {
+    "businessName": "Jupiter SEO Tool",
+    "businessId": "69f2e677f28068725347ad9e",
+    "_id": "69f2f644f28068725347dd2a",
+    "name": "Envato Elements",
+    "price": 289
+  },
+  {
+    "businessName": "Jupiter SEO Tool",
+    "businessId": "69f2e677f28068725347ad9e",
+    "_id": "69f2f624f28068725347d9fe",
+    "name": "Semrush Guru",
+    "price": 189
+  },
+  {
+    "businessName": "Jupiter SEO Tool",
+    "businessId": "69f2e677f28068725347ad9e",
+    "_id": "69f2f609f28068725347d7b3",
+    "name": "Graphics Mega Plan (15+ Tools)",
+    "price": 549
+  },
+  {
+    "businessName": "Jupiter SEO Tool",
+    "businessId": "69f2e677f28068725347ad9e",
+    "_id": "69f2f5d7f28068725347d30a",
+    "name": "Writer Mega Plan (15+ Tools)",
+    "price": 589
+  },
+  {
+    "businessName": "Jupiter SEO Tool",
+    "businessId": "69f2e677f28068725347ad9e",
+    "_id": "69f2f597f28068725347cc6c",
+    "name": "Mega All in One Plan (50+ Tools)",
+    "price": 599
+  },
+  {
+    "businessName": "Rail One",
+    "businessId": "69f2e264f280687253478153",
+    "_id": "69f2e389f28068725347aae5",
+    "name": "IOS App",
+    "price": 0
+  },
+  {
+    "businessName": "Rail One",
+    "businessId": "69f2e264f280687253478153",
+    "_id": "69f2e344f28068725347a36f",
+    "name": "Android App",
+    "price": 0
+  },
+  {
+    "businessName": "Digi Yatra",
+    "businessId": "69f2e093f2806872534766e7",
+    "_id": "69f2e139f280687253477c96",
+    "name": "Android play store link",
+    "price": 0
+  },
+  {
+    "businessName": "Digi Yatra",
+    "businessId": "69f2e093f2806872534766e7",
+    "_id": "69f2e0e1f2806872534770ef",
+    "name": "Apple app store link",
+    "price": 0
+  },
+  {
+    "businessName": "Digi locker",
+    "businessId": "69f2dde1f2806872534727ed",
+    "_id": "69f2dfdcf280687253476628",
+    "name": "Caste Certificate",
+    "price": 0
+  },
+  {
+    "businessName": "Digi locker",
+    "businessId": "69f2dde1f2806872534727ed",
+    "_id": "69f2dfb9f280687253476077",
+    "name": "Ration Card",
+    "price": 0
+  },
+  {
+    "businessName": "Digi locker",
+    "businessId": "69f2dde1f2806872534727ed",
+    "_id": "69f2df9ff280687253475ceb",
+    "name": "Registration of Vehicles",
+    "price": 0
+  },
+  {
+    "businessName": "Digi locker",
+    "businessId": "69f2dde1f2806872534727ed",
+    "_id": "69f2df68f2806872534755ab",
+    "name": "Driving License",
+    "price": 0
+  },
+  {
+    "businessName": "Digi locker",
+    "businessId": "69f2dde1f2806872534727ed",
+    "_id": "69f2df42f280687253475021",
+    "name": "Class X Marksheet",
+    "price": 0
+  },
+  {
+    "businessName": "Digi locker",
+    "businessId": "69f2dde1f2806872534727ed",
+    "_id": "69f2df19f280687253474aa9",
+    "name": "Class XII Marksheet",
+    "price": 0
+  },
+  {
+    "businessName": "Parivahan",
+    "businessId": "69f1f774f280687253463da8",
+    "_id": "69f1f87cf28068725346648c",
+    "name": "Other Services",
+    "price": 0
+  },
+  {
+    "businessName": "Parivahan",
+    "businessId": "69f1f774f280687253463da8",
+    "_id": "69f1f85ef280687253466040",
+    "name": "Driving School",
+    "price": 0
+  },
+  {
+    "businessName": "Parivahan",
+    "businessId": "69f1f774f280687253463da8",
+    "_id": "69f1f84bf280687253465da4",
+    "name": "Drivers/ Learners License",
+    "price": 0
+  },
+  {
+    "businessName": "Parivahan",
+    "businessId": "69f1f774f280687253463da8",
+    "_id": "69f1f824f28068725346578d",
+    "name": "Online Test/ Appointment",
+    "price": 0
+  },
+  {
+    "businessName": "Neo Sapien",
+    "businessId": "69ef52abf280687253432770",
+    "_id": "69ef56b6f280687253438563",
+    "name": "Neo 1",
+    "price": 11999
+  },
+  {
+    "businessName": "Inspire leap",
+    "businessId": "696631e563ff2988f6e87da9",
+    "_id": "696637fb63ff2988f6e87f85",
+    "name": "Artificial Intelligence",
+    "price": 5999
+  },
+  {
+    "businessName": "WayEva",
+    "businessId": "69662f6063ff2988f6e87ce9",
+    "_id": "69662feb63ff2988f6e87d49",
+    "name": "Artificial Intelligence",
+    "price": 7499
+  },
+  {
+    "businessName": "WayEva",
+    "businessId": "69662f6063ff2988f6e87ce9",
+    "_id": "69662fbb63ff2988f6e87d42",
+    "name": "Machine Learning With Python",
+    "price": 7499
+  },
+  {
+    "businessName": "Vedupskilling",
+    "businessId": "6965e2ac63ff2988f6e87b8a",
+    "_id": "6965e39f63ff2988f6e87bfb",
+    "name": "Blockchain Development",
+    "price": 7999
+  },
+  {
+    "businessName": "Vedupskilling",
+    "businessId": "6965e2ac63ff2988f6e87b8a",
+    "_id": "6965e36763ff2988f6e87bf4",
+    "name": "VLSI",
+    "price": 7999
+  },
+  {
+    "businessName": "Vedxlence",
+    "businessId": "6965d84263ff2988f6e87a3c",
+    "_id": "697c42474e015b0550275a06",
+    "name": "AI & Prompt Engineering (Generative AI)",
+    "price": 5500
+  },
+  {
+    "businessName": "Vedxlence",
+    "businessId": "6965d84263ff2988f6e87a3c",
+    "_id": "697c41e44e015b05502759ff",
+    "name": "Python Full Stack Development",
+    "price": 5500
+  },
+  {
+    "businessName": "Vedxlence",
+    "businessId": "6965d84263ff2988f6e87a3c",
+    "_id": "697c41c44e015b05502759f8",
+    "name": "Machine Learning with Python",
+    "price": 5500
+  },
+  {
+    "businessName": "Vedxlence",
+    "businessId": "6965d84263ff2988f6e87a3c",
+    "_id": "697c41a04e015b05502759f1",
+    "name": "Blockchain & Web 3.0",
+    "price": 5500
+  },
+  {
+    "businessName": "Vedxlence",
+    "businessId": "6965d84263ff2988f6e87a3c",
+    "_id": "697c41794e015b05502759ea",
+    "name": "Sales & Growth Hacking Mastery",
+    "price": 5500
+  },
+  {
+    "businessName": "Vedxlence",
+    "businessId": "6965d84263ff2988f6e87a3c",
+    "_id": "697c401b4e015b05502759e3",
+    "name": "Product Management for Non-Tech Students",
+    "price": 5500
+  },
+  {
+    "businessName": "Vedxlence",
+    "businessId": "6965d84263ff2988f6e87a3c",
+    "_id": "697c3ff64e015b05502759dc",
+    "name": "Digital Entrepreneurship Tracks",
+    "price": 5500
+  },
+  {
+    "businessName": "Vedxlence",
+    "businessId": "6965d84263ff2988f6e87a3c",
+    "_id": "697c3fd94e015b05502759d5",
+    "name": "Startup & Entrepreneurship Studio",
+    "price": 5500
+  },
+  {
+    "businessName": "Vedxlence",
+    "businessId": "6965d84263ff2988f6e87a3c",
+    "_id": "697c3fba4e015b05502759ce",
+    "name": "UI/UX Designing",
+    "price": 5500
+  },
+  {
+    "businessName": "Vedxlence",
+    "businessId": "6965d84263ff2988f6e87a3c",
+    "_id": "697c3f934e015b05502759c7",
+    "name": "AutoCAD",
+    "price": 5500
+  },
+  {
+    "businessName": "Vedxlence",
+    "businessId": "6965d84263ff2988f6e87a3c",
+    "_id": "697c3f774e015b05502759c0",
+    "name": "VLSI",
+    "price": 5500
+  },
+  {
+    "businessName": "Vedxlence",
+    "businessId": "6965d84263ff2988f6e87a3c",
+    "_id": "697c3f574e015b05502759b9",
+    "name": "Cyber Security & Ethical Hacking",
+    "price": 5500
+  },
+  {
+    "businessName": "Vedxlence",
+    "businessId": "6965d84263ff2988f6e87a3c",
+    "_id": "697c3f3a4e015b05502759b2",
+    "name": "Finance for the Real World",
+    "price": 5500
+  },
+  {
+    "businessName": "Vedxlence",
+    "businessId": "6965d84263ff2988f6e87a3c",
+    "_id": "697c3f154e015b05502759ab",
+    "name": "Advanced MS Excel with AI",
+    "price": 5500
+  },
+  {
+    "businessName": "Vedxlence",
+    "businessId": "6965d84263ff2988f6e87a3c",
+    "_id": "6965df3963ff2988f6e87b57",
+    "name": "Financial Modeling & Analytics with Excel + AI",
+    "price": 5500
+  },
+  {
+    "businessName": "Vedxlence",
+    "businessId": "6965d84263ff2988f6e87a3c",
+    "_id": "6965df0263ff2988f6e87b50",
+    "name": "Data Science with Real-Time Business Cases",
+    "price": 5500
+  },
+  {
+    "businessName": "Vedxlence",
+    "businessId": "6965d84263ff2988f6e87a3c",
+    "_id": "6965debc63ff2988f6e87b49",
+    "name": "DevOps and Cloud Career Launchpad",
+    "price": 5500
+  },
+  {
+    "businessName": "SprintM",
+    "businessId": "6965d44b63ff2988f6e87997",
+    "_id": "697c3c064e015b055027583a",
+    "name": "CONSTRUCTION PLANNING",
+    "price": 7999
+  },
+  {
+    "businessName": "SprintM",
+    "businessId": "6965d44b63ff2988f6e87997",
+    "_id": "697c3b944e015b0550275825",
+    "name": "DIGITAL MARKETING",
+    "price": 7999
+  },
+  {
+    "businessName": "SprintM",
+    "businessId": "6965d44b63ff2988f6e87997",
+    "_id": "697c3b4a4e015b055027581e",
+    "name": "STOCK MARKETING",
+    "price": 7999
+  },
+  {
+    "businessName": "SprintM",
+    "businessId": "6965d44b63ff2988f6e87997",
+    "_id": "697c3ad94e015b0550275817",
+    "name": "BUSINESS ANALYST",
+    "price": 7999
+  },
+  {
+    "businessName": "SprintM",
+    "businessId": "6965d44b63ff2988f6e87997",
+    "_id": "697c3ab44e015b0550275810",
+    "name": "GENETIC ENGINEERING",
+    "price": 7999
+  },
+  {
+    "businessName": "SprintM",
+    "businessId": "6965d44b63ff2988f6e87997",
+    "_id": "697c3a4f4e015b0550275809",
+    "name": "ARTIFICIAL INTELLIGENCE",
+    "price": 7999
+  },
+  {
+    "businessName": "SprintM",
+    "businessId": "6965d44b63ff2988f6e87997",
+    "_id": "697c3a284e015b0550275802",
+    "name": "MACHINE LEARNING",
+    "price": 7999
+  },
+  {
+    "businessName": "SprintM",
+    "businessId": "6965d44b63ff2988f6e87997",
+    "_id": "697c3a074e015b05502757fb",
+    "name": "AIML",
+    "price": 7999
+  },
+  {
+    "businessName": "SprintM",
+    "businessId": "6965d44b63ff2988f6e87997",
+    "_id": "697c39e54e015b05502757f4",
+    "name": "UI/UX – AI",
+    "price": 7999
+  },
+  {
+    "businessName": "SprintM",
+    "businessId": "6965d44b63ff2988f6e87997",
+    "_id": "697c39ba4e015b05502757ed",
+    "name": "App Clone (Youtube Whats App, Netflix)",
+    "price": 7999
+  },
+  {
+    "businessName": "SprintM",
+    "businessId": "6965d44b63ff2988f6e87997",
+    "_id": "697c39504e015b05502757e1",
+    "name": "Graphic Design",
+    "price": 7999
+  },
+  {
+    "businessName": "SprintM",
+    "businessId": "6965d44b63ff2988f6e87997",
+    "_id": "6965d59263ff2988f6e87a05",
+    "name": "Data Structure Algorithms – DSA",
+    "price": 7999
+  }
+]
