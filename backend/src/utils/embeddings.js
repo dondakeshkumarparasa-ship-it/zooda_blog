@@ -1,5 +1,8 @@
 // backend/lib/embeddings.js ✅ FULL UPDATED (safe + stable)
-const { pipeline } = require("@xenova/transformers");
+const { pipeline, env } = require("@xenova/transformers");
+
+// Configure cache directory for write-access in Vercel Serverless environment
+env.cacheDir = "/tmp";
 
 let embedderPromise = null;
 
