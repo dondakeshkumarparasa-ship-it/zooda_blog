@@ -19,18 +19,6 @@ const getBusinesses = async (req, res) => {
 
     const businesses = await Business.find(query)
       .populate('user', 'firstName lastName email')
-      .populate({
-        path: 'posts',
-        options: { sort: { createdAt: -1 } }
-      })
-      .populate({
-        path: 'products',
-        options: { sort: { createdAt: -1 } }
-      })
-      .populate({
-        path: 'promotions',
-        options: { sort: { createdAt: -1 } }
-      })
       .lean();
 
     const formattedBusinesses = businesses.map(biz => ({
