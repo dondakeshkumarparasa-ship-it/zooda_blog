@@ -36,6 +36,21 @@ try {
 }
 app.use('/sdk', express.static(sdkDir));
 
+// Database connection middleware to ensure connection before handling routes (especially in serverless contexts)
+const mongoose = require('mongoose');
+const connectDatabase = require('./config/database');
+app.use(async (req, res, next) => {
+  if (mongoose.connection.readyState !== 1) {
+    try {
+      await connectDatabase();
+    } catch (err) {
+      console.error("Database connection error in middleware:", err);
+      return res.status(500).json({ message: "Database connection failed", error: err.message });
+    }
+  }
+  next();
+});
+
 // Mount routes
 app.use('/api', apiRouter);
 
