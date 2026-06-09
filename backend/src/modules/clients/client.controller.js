@@ -572,5 +572,8 @@ module.exports = {
   syncWordpressProduct,
   syncWordpressProductsBulk,
   syncWoocommercePull,
+  syncShopifyPull,
+  syncCustomProduct,
+  deleteSyncedProduct,
   resetPassword
 };
