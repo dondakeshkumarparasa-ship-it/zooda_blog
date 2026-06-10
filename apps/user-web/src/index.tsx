@@ -1,8 +1,10 @@
+import "./index.css";
 import React, { useState, useEffect, useCallback, useRef } from "react";
 import { createRoot } from "react-dom/client";
 import axios from "axios";
 import logoUrl from './images/logo.png';
 import { Eye, EyeOff, Bot, Send, MessageSquare, Sparkles, User, ArrowLeft, RefreshCw, Building, Lock, Search, Loader2, ChevronRight, ChevronLeft, Heart, MessageCircle, Share2 } from "lucide-react";
+
 
 
 const shuffleArray = (array: any[]) => {
