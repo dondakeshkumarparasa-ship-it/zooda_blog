@@ -26,16 +26,33 @@ const seedCategories = async () => {
   }
 };
 
+let cachedConnection = null;
+
 const connectDatabase = async () => {
   const MONGODB_URI = process.env.MONGODB_URI || "mongodb+srv://zoodanew_db_user:BtEKCF6787xJg0Ha@cluster0.yaecgnu.mongodb.net/?appName=Cluster0";
+  
+  if (mongoose.connection.readyState === 1) {
+    return mongoose.connection;
+  }
+
+  if (mongoose.connection.readyState === 2 && cachedConnection) {
+    return cachedConnection;
+  }
+
   try {
-    await mongoose.connect(MONGODB_URI);
+    cachedConnection = mongoose.connect(MONGODB_URI, {
+      serverSelectionTimeoutMS: 5000,
+      socketTimeoutMS: 45000,
+    });
+    await cachedConnection;
     console.log("MongoDB Connected Successfully");
-    await seedCategories();
+    seedCategories().catch(err => console.error("Error seeding categories in background:", err));
   } catch (err) {
+    cachedConnection = null;
     console.error("MongoDB Connection Error:", err);
     throw err;
   }
+  return mongoose.connection;
 };
 
 module.exports = connectDatabase;
