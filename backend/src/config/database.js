@@ -31,6 +31,10 @@ let cachedConnection = null;
 const connectDatabase = async () => {
   const MONGODB_URI = process.env.MONGODB_URI || "mongodb+srv://zoodanew_db_user:BtEKCF6787xJg0Ha@cluster0.yaecgnu.mongodb.net/?appName=Cluster0";
   
+  if (mongoose.connection.readyState === 0) {
+    cachedConnection = null;
+  }
+
   if (mongoose.connection.readyState === 1) {
     return mongoose.connection;
   }
