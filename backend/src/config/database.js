@@ -45,8 +45,10 @@ const connectDatabase = async () => {
 
   try {
     cachedConnection = mongoose.connect(MONGODB_URI, {
-      serverSelectionTimeoutMS: 5000,
+      serverSelectionTimeoutMS: 10000,
       socketTimeoutMS: 45000,
+      maxPoolSize: 5,
+      bufferCommands: false,
     });
     await cachedConnection;
     console.log("MongoDB Connected Successfully");
